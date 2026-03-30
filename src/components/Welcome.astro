@@ -5,32 +5,45 @@ import Typerwriter from '../components/typewriter.astro';
 const mainTitle = "Building high-performance software and digital infrastructure.";
 ---
 
-<div class="w-full h-15 flex items-center justify-between border-b-2 border-gray-800 p-4">
+<div class="w-full h-15 flex items-center justify-between border-b-2 border-vanter p-4">
     <div class="flex items-center gap-4 ">
         <img class="rounded-lg size-10" 
         src="/vanter-tech_logo.webp" alt="Vanter Tech Logo">
-        <h2 class="vanter-font-code text-2xl font-semibold text-white">VANTER</h2>
+        <h2 class=" text-2xl font-semibold color-vanter-primary-text">VANTER</h2>
     </div>
     <div>
         <ul class="flex gap-6">
-            <li><a href="/about" class="vanter-primary-text-color hover:text-blue-500">ABOUT US</a></li>
-            <li><a href="/services" class="vanter-primary-text-color hover:text-blue-500">SERVICES</a></li>
-            <li><a href="/contact" class="vanter-primary-text-color hover:text-blue-500">CONTACT US</a></li>
+            <li><a href="/about" class="color-vanter-primary-text hover:text-blue-500">ABOUT US</a></li>
+            <li><a href="/services" class="color-vanter-primary-text hover:text-blue-500">SERVICES</a></li>
+            <li><a href="/contact" class="color-vanter-primary-text hover:text-blue-500">CONTACT US</a></li>
         </ul>
     </div>
 </div>
-<div class="mt-12">
-    <p class="text-5xl md:text-7xl lg:text-[6rem] leading-tight text-white font-bold max-w-5xl" >
-        <Typerwriter text={mainTitle} typingSpeed={80} />
-    </p>
+<div class="mt-12 flex flex-col items-start"> 
+    
+    <div class="relative max-w-5xl">
+    
+        <h1 class="invisible text-5xl md:text-7xl lg:text-[6rem] leading-tight font-bold pointer-events-none">
+            Building high-performance<br/>
+            software and digital<br/>
+            infrastructure.
+        </h1>
+
+        <div class="absolute inset-0 w-full h-full">
+            <h1 class="text-5xl md:text-7xl lg:text-[6rem] leading-tight text-vanter-text font-bold">
+                <Typerwriter text={mainTitle} typingSpeed={80} />
+            </h1>
+    </div>
+
+  </div>
 </div>
 <div class="text-center gap-3 mt-10 flex justify-center">
-    <button class="bg-black text-white font-bold h-15 w-55 py-2 px-4 rounded border-2
-     border-gray-800 cursor-pointer">
-        Get Started
+    <button class="bg-vanter-bg color-vanter-primary-text font-bold h-15 w-55 py-2 px-4 rounded border-2
+     border-vanter cursor-pointer">
+        Dive into it
     </button>
-    <button class="bg-black text-white font-bold h-15 w-55 py-2 px-4 rounded border-2
-     border-gray-800 cursor-pointer">
+    <button class="bg-vanter-bg color-vanter-primary-text font-bold h-15 w-55 py-2 px-4 rounded border-2
+     border-vanter cursor-pointer">
         Get Started
     </button>
 </div>
