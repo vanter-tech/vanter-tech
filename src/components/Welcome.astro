@@ -1,31 +1,38 @@
 ---
 import '../styles/global.css';
 import Typerwriter from '../components/typewriter.astro';
+import { useTranslation } from '../i18n/ui';
 
-const mainTitle = "Building high-performance software and digital infrastructure.";
+interface Props {
+    lang: 'en' | 'es' | 'fr' | 'jp';
+}
+
+const { lang } = Astro.props;
+
+const t = useTranslation(lang);
 ---
 
 <div class="w-full h-15 flex items-center justify-between border-b-2 border-vanter p-4">
     <div class="flex items-center gap-4 ">
         <img class="rounded-lg size-10" 
         src="/vanter-tech_logo.webp" alt="Vanter Tech Logo">
-        <h2 class=" text-2xl font-semibold color-vanter-primary-text">VANTER</h2>
+        <h2 class=" text-2xl font-semibold text-vanter-primary-text">VANTER</h2>
     </div>
     <div>
         <ul class="flex gap-6">
-            <li><a href="/about" class="color-vanter-primary-text hover:text-blue-500">ABOUT US</a></li>
-            <li><a href="/services" class="color-vanter-primary-text hover:text-blue-500">SERVICES</a></li>
-            <li><a href="/contact" class="color-vanter-primary-text hover:text-blue-500">CONTACT US</a></li>
+            <li><a href="/about" class="text-vanter-primary-text hover:text-blue-500">{t('nav.about')}</a></li>
+            <li><a href="/services" class="text-vanter-primary-text hover:text-blue-500">{t('nav.services')}</a></li>
+            <li><a href="/contact" class="text-vanter-primary-text hover:text-blue-500">{t('nav.contact')}</a></li>
         </ul>
     </div>
     <div>
-        <button class="bg-vanter-bg color-vanter-primary-text font-bold h-10 w-25 py-2 px-4 rounded border-2
+        <button class="bg-vanter-bg text-vanter-primary-text font-bold h-10 w-25 py-2 px-4 rounded border-2
             border-vanter cursor-pointer">
-            Pricing
+            {t('btn.pricing')}
         </button>
-        <button class="bg-vanter-bg color-vanter-primary-text font-bold h-10 w-25 py-2 px-4 rounded border-2
+        <button class="bg-vanter-bg text-vanter-primary-text font-bold h-10 w-25 py-2 px-4 rounded border-2
         border-vanter cursor-pointer">
-        More..
+        {t('btn.more')}
         </button>
     </div>
 </div>
@@ -34,26 +41,24 @@ const mainTitle = "Building high-performance software and digital infrastructure
     <div class="relative max-w-5xl">
     
         <h1 class="invisible text-5xl md:text-7xl lg:text-[6rem] leading-tight font-bold pointer-events-none">
-            Building high-performance<br/>
-            software and digital<br/>
-            infrastructure.
+           {t('hero.mainTitle')}
         </h1>
 
         <div class="absolute inset-0 w-full h-full">
-            <h1 class="text-5xl md:text-7xl lg:text-[6rem] leading-tight text-vanter-text font-bold">
-                <Typerwriter text={mainTitle} typingSpeed={80} />
+            <h1 class="text-5xl md:text-7xl lg:text-[6rem] leading-tight text-vanter-primary-text font-bold">
+                <Typerwriter text={t('hero.mainTitle')} typingSpeed={80} />
             </h1>
     </div>
 
   </div>
 </div>
 <div class="text-center gap-3 mt-10 flex justify-center">
-    <button class="bg-vanter-bg color-vanter-primary-text font-bold h-15 w-55 py-2 px-4 rounded border-2
+    <button class="bg-vanter-bg text-vanter-primary-text font-bold h-15 w-55 py-2 px-4 rounded border-2
      border-vanter cursor-pointer">
-        Dive into it
+        {t('btn.diveIntoIt')}
     </button>
-    <button class="bg-vanter-bg color-vanter-primary-text font-bold h-15 w-55 py-2 px-4 rounded border-2
+    <button class="bg-vanter-bg text-vanter-primary-text font-bold h-15 w-55 py-2 px-4 rounded border-2
      border-vanter cursor-pointer">
-        Get Started
+        {t('btn.getStarted')}
     </button>
 </div>

@@ -14,9 +14,21 @@ import '../styles/global.css';
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+		
+		<script is:inline>
+
+			const userLang = navigator.language || navigator.userLanguage;
+			const currerntPath = window.location.pathname;
+
+			if(userLang.startsWith('es') && currerntPath === '/') {
+				window.location.pathname = '/es' + currerntPath;
+			}
+
+		</script>
+
 		<title>Vanter</title>
 	</head>
-	<body class="bg-vanter-bg text-white font-vanter-code min-h-screen">
+	<body class="bg-vanter-bg color-vanter-primary-text font-vanter-code min-h-screen">
 		<div class="max-w-7xl mx-auto w-full px-4">
 			<slot />
 		</div>

@@ -9,23 +9,49 @@ export const defaultLanguage = "en";
 
 export const ui = {
     en: {
-        mainTitle: "Building high-performance software and digital infrastructure.",
-        diveIntoIt: "Dive into it",
-        getStarted: "Get Started"
+        'nav.about': "ABOUT US",
+        'nav.services': "SERVICES",
+        'nav.contact': "CONTACT US",
+        'hero.mainTitle': "Building high-performance software and digital infrastructure.",
+        'btn.diveIntoIt': "Dive into it",
+        'btn.getStarted': "Get Started",
+        'btn.pricing': "Pricing",
+        'btn.more': "More..."
     },
     es: {
-        mainTitle: "Construyendo software de alto rendimiento y infraestructura digital.",
-        diveIntoIt: "Sumérgete en ello",
-        getStarted: "Comenzar"
+        'nav.about': "SOBRE NOSOTROS",
+        'nav.services': "SERVICIOS",
+        'nav.contact': "CONTACTO",
+        'hero.mainTitle': "Construyendo software de alto rendimiento e infraestructura digital.",
+        'btn.diveIntoIt': "Sumérgete en ello",
+        'btn.getStarted': "Comenzar",
+        'btn.pricing': "Precios",
+        'btn.more': "Más..."
     },
     fr: {
-        mainTitle: "Construisant un logiciel à haut débit et une infrastructure digitale.",
-        diveIntoIt: "Plongez dedans",
-        getStarted: "Commencer"
+        'nav.about': "À PROPOS DE NOUS",
+        'nav.services': "SERVICES",
+        'nav.contact': "CONTACTEZ-NOUS",
+        'hero.mainTitle': "Construisant un logiciel à haut débit et une infrastructure digitale.",
+        'btn.diveIntoIt': "Plongez dedans",
+        'btn.getStarted': "Commencer",
+        'btn.pricing': "Tarification",
+        'btn.more': "Plus..."
     },
     jp: {
-        mainTitle: "高性能なソフトウェアとデジタルインフラを構築する。",
-        diveIntoIt: "詳しく見る",
-        getStarted: "始めよう"
+        'nav.about': "私たちについて",
+        'nav.services': "サービス",
+        'nav.contact': "お問い合わせ",
+        'hero.mainTitle': "高性能なソフトウェアとデジタルインフラを構築する。",
+        'btn.diveIntoIt': "詳しく見る",
+        'btn.getStarted': "始めよう",
+        'btn.pricing': "料金",
+        'btn.more': "もっと..."
     }
 }as const;
+
+export function useTranslation(lang: keyof typeof ui) {
+    return function t(key: keyof typeof ui[typeof defaultLanguage]) {
+        return ui[lang][key] || ui[defaultLanguage][key];
+    };
+}
