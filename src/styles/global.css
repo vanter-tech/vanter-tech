@@ -1,7 +1,27 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+:root{
+  --vanter-background: #ffffff;
+  --vanter-primary-text-color: #18181b;
+  --vanter-secondary-text-color: #3b82f6;
+  --vanter-font-code: "JetBrains Mono", monospace;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --vanter-background: #18181b;
+    --vanter-primary-text-color: #f4f4f5;
+    --vanter-secondary-text-color: #4ade80;
+    --vanter-font-code: "JetBrains Mono", monospace;
+  }
+}
+
 @theme {
   /* Aquí creamos la clase personalizada */
-  --font-code: "JetBrains Mono", monospace;
+  --vanter-background: var(--vanter-background);
+  --vanter-primary-text-color: var(--vanter-primary-text-color);
+  --vanter-secondary-text-color: var(--vanter-secondary-text-color);
+  --vanter-font-code: var(--vanter-font-code);
 }
