@@ -1,0 +1,55 @@
+---
+interface Props {
+  text: string;
+  typingSpeed?: number; 
+}
+const { text, typingSpeed = 100 } = Astro.props; 
+---
+
+<span class="typewriter-container font-code" data-text={text} data-speed={typingSpeed}></span>
+
+<script>
+    function initTypewriter(){
+        const containers = document.querySelectorAll('.typewriter-container');
+
+        containers.forEach(container => {
+            const text = container.getAttribute('data-text') || '';
+            const speed = parseInt(container.getAttribute('data-speed') || '80');
+
+            let charIndex = 0;
+
+            function typeChar(){
+                if(charIndex < text.length){
+                    if(text.charAt(charIndex) === '\n'){
+                        container.innerHTML += '<br>';
+                    } else {
+                        container.innerHTML += text.charAt(charIndex);
+                    }
+
+                    charIndex++;
+                    setTimeout(typeChar, speed);
+                }else{
+                    console.log("Fin.");
+                    
+                }
+            }
+
+            typeChar();
+
+        })
+    }
+    document.addEventListener('DOMContentLoaded', initTypewriter);
+</script>
+
+<style>
+    .typewriter-container::after {
+      content: '|';
+      margin-left: 2px; 
+      color: #4ade80; 
+      font-weight: 300;
+      animation: blink 1s step-end infinite;
+  }
+    @keyframes blink {
+        50% { opacity: 0;}
+    }
+</style>
