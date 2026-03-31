@@ -24,30 +24,46 @@ const t = useTranslation(lang);
     <div id="line2" class="w-6 h-0.5 bg-vanter-primary-text transition-all duration-300"></div>
   </button>
 
-  <div id="mobile-menu" class="absolute top-full left-0 w-full bg-vanter-bg border-b-2 border-vanter-border p-6 flex flex-col gap-8 z-10 transition-all duration-600 ease-in-out opacity-0 pointer-events-none md:static md:flex-row md:items-center md:justify-end md:w-auto md:border-none md:p-0 md:opacity-100 md:pointer-events-auto">
+  <div class="hidden md:flex md:items-center md:gap-8">
+    <ul class="flex gap-6">
+      <li><a href="/about" class="text-vanter-primary-text hover:text-vanter-secondary-text transition-colors">{t('nav.about')}</a></li>
+      <li><a href="/services" class="text-vanter-primary-text hover:text-vanter-secondary-text transition-colors">{t('nav.services')}</a></li>
+      <li><a href="/contact" class="text-vanter-primary-text hover:text-vanter-secondary-text transition-colors">{t('nav.contact')}</a></li>
+    </ul>
+    <div class="flex gap-4">
+      <button class="bg-vanter-bg text-vanter-primary-text font-bold py-2 px-4 rounded border-2 border-vanter-border hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
+        {t('btn.pricing')}
+      </button>
+      <button class="bg-vanter-bg text-vanter-primary-text font-bold py-2 px-4 rounded border-2 border-vanter-border hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
+        {t('btn.more')}
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-vanter-bg border-b-2 border-vanter-border p-6 flex flex-col gap-8 z-10 transition-all duration-300 ease-in-out opacity-0 pointer-events-none -translate-y-4">
     
-    <ul class="flex flex-col md:flex-row gap-6 text-center md:text-left">
-      <li class="menu-item opacity-0 translate-y-4 transition-all duration-300 md:opacity-100 md:translate-y-0">
-        <a href="/about" class="text-vanter-primary-text hover:text-blue-500">{t('nav.about')}</a>
+    <ul class="flex flex-col gap-6 text-center">
+      <li class="menu-item opacity-0 translate-y-4 transition-all duration-300">
+        <a href="/about" class="text-vanter-primary-text text-xl">{t('nav.about')}</a>
       </li>
-      <li class="menu-item opacity-0 translate-y-4 transition-all duration-300 md:opacity-100 md:translate-y-0">
-        <a href="/services" class="text-vanter-primary-text hover:text-blue-500">{t('nav.services')}</a>
+      <li class="menu-item opacity-0 translate-y-4 transition-all duration-300">
+        <a href="/services" class="text-vanter-primary-text text-xl">{t('nav.services')}</a>
       </li>
-      <li class="menu-item opacity-0 translate-y-4 transition-all duration-300 md:opacity-100 md:translate-y-0">
-        <a href="/contact" class="text-vanter-primary-text hover:text-blue-500">{t('nav.contact')}</a>
+      <li class="menu-item opacity-0 translate-y-4 transition-all duration-300">
+        <a href="/contact" class="text-vanter-primary-text text-xl">{t('nav.contact')}</a>
       </li>
     </ul>
 
-    <div class="flex flex-col md:flex-row gap-4 mt-4 md:mt-0">
-      <button class="menu-item opacity-0 translate-y-4 transition-all duration-300 md:opacity-100 md:translate-y-0 bg-vanter-bg text-vanter-primary-text font-bold py-2 px-4 rounded border-2 border-vanter-border cursor-pointer w-full md:w-auto">
+    <div class="flex flex-col gap-4 mt-4">
+      <button class="menu-item opacity-0 translate-y-4 transition-all duration-300 bg-vanter-bg text-vanter-primary-text font-bold py-3 px-4 rounded border-2 border-vanter-border w-full">
         {t('btn.pricing')}
       </button>
-      <button class="menu-item opacity-0 translate-y-4 transition-all duration-300 md:opacity-100 md:translate-y-0 bg-vanter-bg text-vanter-primary-text font-bold py-2 px-4 rounded border-2 border-vanter-border cursor-pointer w-full md:w-auto">
+      <button class="menu-item opacity-0 translate-y-4 transition-all duration-300 bg-vanter-bg text-vanter-primary-text font-bold py-3 px-4 rounded border-2 border-vanter-border w-full">
         {t('btn.more')}
       </button>
     </div>
 
-</div>
+  </div>
 </nav>
 <div class="mt-12 flex flex-col items-center"> 
     

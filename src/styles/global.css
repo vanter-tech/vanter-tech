@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+
 :root{
     --vanter-background: #000000;
     --vanter-primary-text-color: #f4f4f5;

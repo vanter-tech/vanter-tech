@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setTimeout(() => {
           if (isOpen) {
-            // Entran subiendo
+
             item.classList.remove('opacity-0', 'translate-y-4');
             item.classList.add('opacity-100', 'translate-y-0');
           } else {
-            // Salen bajando (sin retraso para que se cierre rápido)
+
             item.classList.remove('opacity-100', 'translate-y-0');
             item.classList.add('opacity-0', 'translate-y-4');
           }
