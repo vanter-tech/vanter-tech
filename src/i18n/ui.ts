@@ -16,7 +16,7 @@ export const ui = {
     en,
     es,
     fr,
-    jp
+    jp 
 }as const;
 
 export function useTranslation(lang: keyof typeof ui) {

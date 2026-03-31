@@ -1,3 +1,10 @@
 {
-    
+    "nav.about": "ABOUT US",
+    "nav.services": "SERVICES",
+    "nav.contact": "CONTACT US",
+    "hero.mainTitle": "Building high-performance software and digital infrastructure.",
+    "btn.diveIntoIt": "Dive into it",
+    "btn.getStarted": "Get Started",
+    "btn.pricing": "Pricing",
+    "btn.more": "More..."
 }

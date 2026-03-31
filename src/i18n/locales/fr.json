@@ -1,3 +1,10 @@
 {
-    
+    "nav.about": "À PROPOS DE NOUS",
+    "nav.services": "SERVICES",
+    "nav.contact": "CONTACTEZ-NOUS",
+    "hero.mainTitle": "Construisant un logiciel à haut débit et une infrastructure digitale.",
+    "btn.diveIntoIt": "Plongez dedans",
+    "btn.getStarted": "Commencer",
+    "btn.pricing": "Tarification",
+    "btn.more": "Plus..."
 }

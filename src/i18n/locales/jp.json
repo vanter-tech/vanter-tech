@@ -1,3 +1,10 @@
 {
-    
+    "nav.about": "私たちについて",
+    "nav.services": "サービス",
+    "nav.contact": "お問い合わせ",
+    "hero.mainTitle": "高性能なソフトウェアとデジタルインフラを構築する。",
+    "btn.diveIntoIt": "詳しく見る",
+    "btn.getStarted": "始めよう",
+    "btn.pricing": "料金",
+    "btn.more": "もっと..."
 }
