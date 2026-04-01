@@ -11,77 +11,81 @@ const { lang } = Astro.props;
 const t = useTranslation(lang);
 
 ---
-<div class="max-w-7xl mx-auto w-full px-4">
-  <nav class="relative w-full min-h-15 flex items-center justify-between border-b-2 border-vanter-border p-4">
-  
-  <div class="flex items-center gap-4 z-20">
-    <img class="rounded-lg size-10" src="/vanter-tech_logo.webp" alt="Vanter Tech Logo">
-    <h2 class="text-2xl font-semibold text-vanter-primary-text font-code">VANTER</h2>
-  </div>
-
-  <button id="burger-btn" class="md:hidden flex flex-col gap-1.5 p-2 cursor-pointer z-20">
-    <div id="line1" class="w-6 h-0.5 bg-vanter-primary-text transition-all duration-300"></div>
-    <div id="line2" class="w-6 h-0.5 bg-vanter-primary-text transition-all duration-300"></div>
-  </button>
-
-  <div class="hidden md:flex md:items-center md:gap-8">
-    <ul class="flex gap-6">
-      <li><a href="/about" class="text-vanter-primary-text hover:text-vanter-secondary-text transition-colors">{t('nav.about')}</a></li>
-      <li><a href="/services" class="text-vanter-primary-text hover:text-vanter-secondary-text transition-colors">{t('nav.services')}</a></li>
-      <li><a href="/contact" class="text-vanter-primary-text hover:text-vanter-secondary-text transition-colors">{t('nav.contact')}</a></li>
-    </ul>
-    <div class="flex gap-4">
-      <button class="bg-vanter-bg text-vanter-primary-text font-bold py-2 px-4 rounded border-2 border-vanter-border hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
-        {t('btn.pricing')}
-      </button>
-      <button class="bg-vanter-bg text-vanter-primary-text font-bold py-2 px-4 rounded border-2 border-vanter-border hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
-        {t('btn.more')}
-      </button>
-    </div>
-  </div>
-
-  <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-vanter-bg border-b-2 border-vanter-border p-6 flex flex-col gap-8 z-10 transition-all duration-300 ease-in-out opacity-0 pointer-events-none -translate-y-4">
+<header class="fixed top-0 left-0 w-full z-50 bg-vanter-bg/80 backdrop-blur-md border-b-2 border-vanter-border">
+  <div class="max-w-7xl mx-auto w-full px-4">
+    <nav class="relative w-full min-h-15 flex items-center justify-between p-4">
     
-    <ul class="flex flex-col gap-6 text-center">
-      <li class="menu-item opacity-0 translate-y-4 transition-all duration-300">
-        <a href="/about" class="text-vanter-primary-text text-xl">{t('nav.about')}</a>
-      </li>
-      <li class="menu-item opacity-0 translate-y-4 transition-all duration-300">
-        <a href="/services" class="text-vanter-primary-text text-xl">{t('nav.services')}</a>
-      </li>
-      <li class="menu-item opacity-0 translate-y-4 transition-all duration-300">
-        <a href="/contact" class="text-vanter-primary-text text-xl">{t('nav.contact')}</a>
-      </li>
-    </ul>
+      <div class="flex items-center gap-4 z-20">
+        <img class="rounded-lg size-10" src="/vanter-tech_logo.webp" alt="Vanter Tech Logo">
+        <h2 class="text-2xl font-semibold text-vanter-primary-text font-code">VANTER</h2>
+      </div>
 
-    <div class="flex flex-col gap-4 mt-4">
-      <button class="menu-item opacity-0 translate-y-4  duration-300 bg-vanter-bg text-vanter-primary-text font-bold py-3 px-4 rounded border-2 border-vanter-border w-full
-      hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
-        {t('btn.pricing')}
+      <button id="burger-btn" class="md:hidden flex flex-col gap-1.5 p-2 cursor-pointer z-20">
+        <div id="line1" class="w-6 h-0.5 bg-vanter-primary-text transition-all duration-300"></div>
+        <div id="line2" class="w-6 h-0.5 bg-vanter-primary-text transition-all duration-300"></div>
       </button>
-      <button class="menu-item opacity-0 translate-y-4  duration-300 bg-vanter-bg text-vanter-primary-text font-bold py-3 px-4 rounded border-2 border-vanter-border w-full
-      hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
-        {t('btn.more')}
-      </button>
-    </div>
 
-  </div>
-</nav>
-<div class="mt-12 flex flex-col items-center w-full px-4"> 
-    <div class="relative max-w-5xl w-full text-center"> 
+      <div class="hidden md:flex md:items-center md:gap-8">
+        <ul class="flex gap-6">
+          <li><a href="/about" class="text-vanter-primary-text hover:text-vanter-secondary-text transition-colors">{t('nav.about')}</a></li>
+          <li><a href="/services" class="text-vanter-primary-text hover:text-vanter-secondary-text transition-colors">{t('nav.services')}</a></li>
+          <li><a href="/contact" class="text-vanter-primary-text hover:text-vanter-secondary-text transition-colors">{t('nav.contact')}</a></li>
+        </ul>
+        <div class="flex gap-4">
+          <button class="bg-vanter-bg text-vanter-primary-text font-bold py-2 px-4 rounded border-2 border-vanter-border hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
+            {t('btn.pricing')}
+          </button>
+          <button class="bg-vanter-bg text-vanter-primary-text font-bold py-2 px-4 rounded border-2 border-vanter-border hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
+            {t('btn.more')}
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-vanter-bg border-b-2 border-vanter-border p-6 flex flex-col gap-8 z-10 transition-all duration-300 ease-in-out opacity-0 pointer-events-none -translate-y-4">
         
-        <h1 class="invisible text-5xl md:text-7xl lg:text-[6rem] leading-tight font-bold pointer-events-none text-center">
-            {t('hero.mainTitle')}
-        </h1>
+        <ul class="flex flex-col gap-6 text-center">
+          <li class="menu-item opacity-0 translate-y-4 transition-all duration-300">
+            <a href="/about" class="text-vanter-primary-text text-xl">{t('nav.about')}</a>
+          </li>
+          <li class="menu-item opacity-0 translate-y-4 transition-all duration-300">
+            <a href="/services" class="text-vanter-primary-text text-xl">{t('nav.services')}</a>
+          </li>
+          <li class="menu-item opacity-0 translate-y-4 transition-all duration-300">
+            <a href="/contact" class="text-vanter-primary-text text-xl">{t('nav.contact')}</a>
+          </li>
+        </ul>
 
-        <div class="absolute inset-0 w-full h-full flex justify-center">
-            <h1 class="text-5xl md:text-7xl lg:text-[6rem] leading-tight text-vanter-primary-text font-bold text-center">
-                <Typerwriter text={t('hero.mainTitle')} typingSpeed={80} />
-            </h1>
+        <div class="flex flex-col gap-4 mt-4">
+          <button class="menu-item opacity-0 translate-y-4  duration-300 bg-vanter-bg text-vanter-primary-text font-bold py-3 px-4 rounded border-2 border-vanter-border w-full hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
+            {t('btn.pricing')}
+          </button>
+          <button class="menu-item opacity-0 translate-y-4  duration-300 bg-vanter-bg text-vanter-primary-text font-bold py-3 px-4 rounded border-2 border-vanter-border w-full hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
+            {t('btn.more')}
+          </button>
         </div>
 
+      </div>
+    </nav>
   </div>
-</div>
+</header>
+
+<main class="w-full pt-32">
+  
+  <div class="flex flex-col items-center w-full px-4 relative"> 
+      <div class="relative max-w-5xl w-full text-center"> 
+          
+          <h1 class="invisible text-5xl md:text-7xl lg:text-[6rem] leading-tight font-bold pointer-events-none text-center">
+              {t('hero.mainTitle')}
+          </h1>
+
+          <div class="absolute inset-0 w-full h-full flex justify-center">
+              <h1 class="text-5xl md:text-7xl lg:text-[6rem] leading-tight text-vanter-primary-text font-bold text-center">
+                  <Typerwriter text={t('hero.mainTitle')} typingSpeed={80} />
+              </h1>
+          </div>
+
+    </div>
+  </div>
 
 <div class="text-center gap-3 mt-10 flex justify-center px-4">
     <button class="bg-vanter-bg text-vanter-primary-text font-bold h-15 w-55 py-2 px-4 rounded border-2 border-vanter cursor-pointer hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
@@ -135,8 +139,8 @@ const t = useTranslation(lang);
               <span>&nbsp;</span>
             </div>
             <div class="flex">
-              <span class="text-gray-700 select-none pr-4 text-right w-8">3</span>
-              <span class="text-purple-400">export const</span> <span class="text-blue-400">&nbsp;deploySolution</span> <span class="text-purple-400">&nbsp;=&nbsp;</span> <span class="text-cyan-400">async</span> <span class="text-gray-300">(clientScope)</span> <span class="text-purple-400">=></span> <span class="text-gray-300">&#123;</span>
+              <span class="text-gray-700 select-none pr-4 text-right w-8">3</span>    
+              <span class="text-purple-400">export const</span> <span class="text-blue-400">&nbsp;deploySolution</span> <span class="text-purple-400">&nbsp;=&nbsp;</span> <span class="text-cyan-400">async</span> <span class="text-gray-300">(clientScope)</span> <span class="text-purple-400">=&gt;</span> <span class="text-gray-300">&#123;</span>
             </div>
             <div class="flex">
               <span class="text-gray-700 select-none pr-4 text-right w-8">4</span>
