@@ -2,6 +2,24 @@
 @plugin "@tailwindcss/typography";
 
 
+@theme {
+
+  --animate-scroll-lento: scroll-lento 30s linear infinite;
+}
+
+
+@keyframes scroll-lento {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@layer utilities {
+  .pause-hover:hover {
+    animation-play-state: paused;
+  }
+}
+
+
 :root{
     --vanter-background: #000000;
     --vanter-primary-text-color: #f4f4f5;
