@@ -6,5 +6,20 @@
     "btn.diveIntoIt": "Sumérgete en ello",
     "btn.getStarted": "Comenzar",
     "btn.pricing": "Precios",
-    "btn.more": "Más"
+    "btn.more": "Más",
+    "title.h2": "Escala tu software",
+    "title.FCard.h2.v2":"sin cambiar de equipo",
+    "title.FCard.h3": "Arquitectura y Código Limpio",
+    "p.FCard.desciption:": "Desarrollamos utilizando las tecnologías más robustas del mercado. Garantizamos mantenibilidad, seguridad y escalabilidad desde la primera línea de código.",
+    "a.FCard.link": "Nuestra tecnología",
+    "title.SCard.h2.v2":"Desarrollo UI & Optimización",
+    "p.SCard.desciption:": "Diseño centrado en el usuario, pruebas A/B y arquitecturas modernas para maximizar la retención.",
+    "a.SCard.link": "Nuestra experiencia",
+    "title.TCard.h2.v2":"Rendimiento Core",
+    "p.TCard.desciption:": "Optimizamos cada línea de código con configuración avanzada y despliegues ultrarrápidos para un Performance perfecto.",
+    "a.TCard.link": "Nuestro rendimiento",
+    "span.TCard.subtitle": "Auditoría Lighthouse",
+    "span.TCard.text": "Prácticas",
+    "span.TCard.text2": "Rendimiento",
+    "span.TCard.text3": "Optimización"
 }

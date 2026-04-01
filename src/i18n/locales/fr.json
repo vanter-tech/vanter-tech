@@ -6,5 +6,21 @@
     "btn.diveIntoIt": "Plongez dedans",
     "btn.getStarted": "Commencer",
     "btn.pricing": "Tarification",
-    "btn.more": "Plus"
+    "btn.more": "Plus",
+    "services.title": "Nos Services",
+    "title.h2": "Faites évoluer votre logiciel",
+    "title.FCard.h2.v2":"sans changer d'équipe",
+    "title.FCard.h3": "Architecture & Code Propre",
+    "p.FCard.desciption:": "Nous développons en utilisant les technologies les plus robustes du marché. Nous garantissons la maintenabilité, la sécurité et l'évolutivité dès la première ligne de code.",
+    "a.FCard.link": "Notre technologie",
+    "title.SCard.h2.v2":"Développement UI & Optimisation",
+    "p.SCard.desciption:": "Conception centrée sur l'utilisateur, tests A/B et architectures modernes pour maximiser la rétention.",
+    "a.SCard.link": "Notre expertise",
+    "title.TCard.h2.v2":"Performance Core",
+    "p.TCard.desciption:": "Nous optimisons chaque ligne de code avec une configuration avancée et des déploiements ultra-rapides pour une performance parfaite.",
+    "a.TCard.link": "Notre performance",
+    "span.TCard.subtitle": "Audit Lighthouse",
+    "span.TCard.text": "Meilleures Pratiques",
+    "span.TCard.text2": "Performance",
+    "span.TCard.text3": "Optimisation"
 }

@@ -6,5 +6,21 @@
     "btn.diveIntoIt": "詳しく見る",
     "btn.getStarted": "始めよう",
     "btn.pricing": "料金",
-    "btn.more": "もっと"
+    "btn.more": "もっと",
+    "services.title": "私たちのサービス",
+    "title.h2": "ソフトウェアをスケールアップ",
+    "title.FCard.h2.v2":"チームを変えずに",
+    "title.FCard.h3": "アーキテクチャとクリーンコード",
+    "p.FCard.desciption:": "市場で最も堅牢な技術を使用して開発します。最初のコード行から保守性、セキュリティ、スケーラビリティを保証します。",
+    "a.FCard.link": "私たちの技術",
+    "title.SCard.h2.v2":"UI開発と最適化",
+    "p.SCard.desciption:": "ユーザー中心のデザイン、A/Bテスト、最新のアーキテクチャでリテンションを最大化します。",
+    "a.SCard.link": "私たちの専門知識",
+    "title.TCard.h2.v2":"コアパフォーマンス",
+    "p.TCard.desciption:": "高度な構成と超高速な展開で、完璧なパフォーマンスのためにコードのすべての行を最適化します。",
+    "a.TCard.link": "私たちのパフォーマンス",
+    "span.TCard.subtitle": "Lighthouse監査",
+    "span.TCard.text": "ベストプラクティス",
+    "span.TCard.text2": "パフォーマンス",
+    "span.TCard.text3": "最適化"
 }

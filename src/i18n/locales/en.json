@@ -6,5 +6,21 @@
     "btn.diveIntoIt": "Dive into it",
     "btn.getStarted": "Get Started",
     "btn.pricing": "Pricing",
-    "btn.more": "More"
+    "btn.more": "More",
+    "services.title": "Our Services",
+    "title.h2": "Scale your software",
+    "title.FCard.h2.v2":"without changing teams",
+    "title.FCard.h3": "Architecture & Clean Code",
+    "p.FCard.desciption:": "We develop using the most robust technologies in the market. We guarantee maintainability, security, and scalability from the first line of code.",
+    "a.FCard.link": "Our technology",
+    "title.SCard.h2.v2":"UI Development & Optimization",
+    "p.SCard.desciption:": "User-centered design, A/B testing, and modern architectures to maximize retention.",
+    "a.SCard.link": "Our expertise",
+    "title.TCard.h2.v2":"Core Performance",
+    "p.TCard.desciption:": "We optimize every line of code with advanced configuration and ultra-fast deployments for perfect Performance.",
+    "a.TCard.link": "Our performance",
+    "span.TCard.subtitle": "Lighthouse Audit",
+    "span.TCard.text": "Best Practices",
+    "span.TCard.text2": "Performance",
+    "span.TCard.text3": "Optimization"
 }

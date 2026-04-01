@@ -97,7 +97,7 @@ const t = useTranslation(lang);
   <div class="max-w-6xl mx-auto">
     
     <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-12 tracking-tight leading-tight">
-      Escala tu software<br>sin cambiar de equipo
+      {t('title.h2')}<br> {t('title.FCard.h2.v2')}
     </h2>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -105,12 +105,12 @@ const t = useTranslation(lang);
       <div class="bg-[#0a0a0a] border border-white/10 rounded-3xl p-8 lg:p-10 flex flex-col h-full hover:border-white/20 transition-colors">
         
         <div class="mb-10">
-          <h3 class="text-xl font-semibold mb-2">Arquitectura y Código Limpio</h3>
+          <h3 class="text-xl font-semibold mb-2">{t('title.FCard.h3')}</h3>
           <p class="text-gray-400 text-sm mb-4 max-w-sm">
-            Desarrollamos utilizando las tecnologías más robustas del mercado. Garantizamos mantenibilidad, seguridad y escalabilidad desde la primera línea de código.
+            {t('p.FCard.desciption:')}
           </p>
           <a href="#" class="text-sm text-gray-300 hover:text-white flex items-center gap-1 transition-colors">
-            Nuestra tecnología <span class="text-xs">›</span>
+            {t('a.FCard.link')} <span class="text-xs">›</span>
           </a>
         </div>
 
@@ -184,12 +184,12 @@ const t = useTranslation(lang);
         <div class="bg-[#0a0a0a] border border-white/10 rounded-3xl p-8 lg:p-10 hover:border-white/20 transition-colors relative overflow-hidden h-full flex flex-col">
           
           <div class="mb-8 relative z-10">
-            <h3 class="text-xl font-semibold mb-2">Desarrollo UI & Optimización</h3>
+            <h3 class="text-xl font-semibold mb-2">{t('title.SCard.h2.v2')}</h3>
             <p class="text-gray-400 text-sm mb-4 max-w-sm">
-              Diseño centrado en el usuario, pruebas A/B y arquitecturas modernas para maximizar la retención.
+              {t('p.SCard.desciption:')}
             </p>
             <a href="#" class="text-sm text-gray-300 hover:text-white flex items-center gap-1 transition-colors">
-              Descubre más <span class="text-xs">›</span>
+              {t('a.SCard.link')} <span class="text-xs">›</span>
             </a>
           </div>
 
@@ -219,19 +219,19 @@ const t = useTranslation(lang);
         <div class="bg-[#0a0a0a] border border-white/10 rounded-3xl p-8 lg:p-10 hover:border-white/20 transition-colors flex flex-col">
           
           <div class="mb-8">
-            <h3 class="text-xl font-semibold mb-2">Rendimiento Core</h3>
+            <h3 class="text-xl font-semibold mb-2">{t('title.TCard.h2.v2')}</h3>
             <p class="text-gray-400 text-sm mb-4 max-w-sm">
-              Optimizamos cada línea de código con configuración avanzada y despliegues ultrarrápidos para un Performance perfecto.
+              {t('p.TCard.desciption:')}
             </p>
             <a href="#" class="text-sm text-gray-300 hover:text-white flex items-center gap-1 transition-colors">
-              Descubre más <span class="text-xs">›</span>
+              {t('a.TCard.link')} <span class="text-xs">›</span>
             </a>
           </div>
 
           <div class="bg-black border border-white/10 rounded-2xl p-6 mt-auto">
             <p class="text-xs font-bold text-center mb-6 flex items-center justify-center gap-2">
               <span class="w-3 h-3 bg-white rounded-full text-[8px] text-black flex items-center justify-center">G</span> 
-              Auditoría Lighthouse
+              {t('span.TCard.subtitle')}
             </p>
             
             <div class="flex justify-center gap-4 sm:gap-8">
@@ -240,14 +240,14 @@ const t = useTranslation(lang);
                   <div class="absolute inset-0 rounded-full border-[3px] border-blue-500" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);"></div>
                   <span class="text-lg sm:text-2xl font-bold">99</span>
                 </div>
-                <span class="text-[10px] sm:text-xs text-gray-500 mt-3 font-medium">Prácticas</span>
+                <span class="text-[10px] sm:text-xs text-gray-500 mt-3 font-medium">{t('span.TCard.text')}</span>
               </div>
 
               <div class="flex flex-col items-center">
                 <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-[3px] border-blue-500 flex items-center justify-center shadow-[0_0_15px_rgba(59,130,246,0.5)]">
                   <span class="text-lg sm:text-2xl font-bold">100</span>
                 </div>
-                <span class="text-[10px] sm:text-xs text-gray-500 mt-3 font-medium">Rendimiento</span>
+                <span class="text-[10px] sm:text-xs text-gray-500 mt-3 font-medium">{t('span.TCard.text2')}</span>
               </div>
 
               <div class="flex flex-col items-center">
@@ -255,7 +255,7 @@ const t = useTranslation(lang);
                   <div class="absolute inset-0 rounded-full border-[3px] border-blue-500" style="clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);"></div>
                   <span class="text-lg sm:text-2xl font-bold">98</span>
                 </div>
-                <span class="text-[10px] sm:text-xs text-gray-500 mt-3 font-medium">Accesibilidad</span>
+                <span class="text-[10px] sm:text-xs text-gray-500 mt-3 font-medium">{t('span.TCard.text3')}</span>
               </div>
             </div>
           </div>
