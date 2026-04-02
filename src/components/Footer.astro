@@ -8,6 +8,13 @@ interface Props {
 const { lang } = Astro.props;
 const t = useTranslation(lang);
 
+//Will be used in the future when we have more pages.
+const getRoute = (route: string) => {
+  if (lang === 'en') return `/${route}`;
+  return `/${lang}/${route}`;
+}
+
+
 ---
 
 <footer class="bg-[#050505] border-t border-white/10 pt-16 pb-8 font-sans mt-24">
