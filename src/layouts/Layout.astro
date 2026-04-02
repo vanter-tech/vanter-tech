@@ -1,5 +1,17 @@
 ---
 import '../styles/global.css';
+import Footer from '../components/Footer.astro';
+import Navbar from '../components/Navbar.astro';	
+
+import { useTranslation } from '../i18n/ui';
+
+interface Props {
+    lang: 'en' | 'es' | 'fr' | 'jp';
+}
+
+const { lang } = Astro.props;
+const t = useTranslation(lang);
+
 ---
 
 <!doctype html>
@@ -30,7 +42,9 @@ import '../styles/global.css';
 	</head>
 	<body class="bg-vanter-bg color-vanter-primary-text font-vanter-code min-h-screen ">
 		<div>
+			<Navbar lang={Astro.props.lang} />
 			<slot />
+			<Footer lang={Astro.props.lang} />
 		</div>
 	</body>
 </html>

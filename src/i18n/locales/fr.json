@@ -22,5 +22,27 @@
     "span.TCard.subtitle": "Audit Lighthouse",
     "span.TCard.text": "Meilleures Pratiques",
     "span.TCard.text2": "Performance",
-    "span.TCard.text3": "Optimisation"
+    "span.TCard.text3": "Optimisation",
+    "h2.Stack.tittle": "Infrastructure",
+    "h3.Stack.tittle": "Notre Stack",
+    "p.Stack.description": "Nous maîtrisons les outils qui alimentent les entreprises les plus innovantes du monde.",
+    "h2.Work.title": "Vous voulez voir ce que nous pouvons faire ?",
+    "p.Work.description": "Explorez nos histoires de réussite et découvrez comment nous avons transformé des idées complexes en plateformes évolutives et à haute performance pour nos clients.",
+    "btn.viewWork": "Voir notre travail",
+    "btn.contactUs": "Contactez-nous",
+    "p.Footer.description": "Construisant le futur digital. Nous transformons des idées complexes en logiciels évolutifs, sécurisés et à haute performance pour les entreprises innovantes.",
+    "h4.Footer.title": "Entreprise",
+    "a.Footer.about": "À propos de nous",
+    "a.Footer.services": "Blog Technique",
+    "a.Footer.contact": "Contact",
+    "h4.Footer.title.2": "Services",
+    "a.Footer.web": "Développement Web",
+    "a.Footer.cloud": "Architecture Cloud",
+    "h4.Footer.title.3": "Légal",
+    "a.Footer.privacy": "Politique de Confidentialité",
+    "a.Footer.terms": "Conditions d'Utilisation",
+    "a.Footer.cookies": "Politique de Cookies",
+    "p.Footer.copyright": "Tous droits réservés.",
+    "span.Footer.dev": "En Développement"
+
 }

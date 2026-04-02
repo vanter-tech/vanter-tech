@@ -22,5 +22,27 @@
     "span.TCard.subtitle": "Lighthouse監査",
     "span.TCard.text": "ベストプラクティス",
     "span.TCard.text2": "パフォーマンス",
-    "span.TCard.text3": "最適化"
+    "span.TCard.text3": "最適化",
+    "h2.Stack.tittle": "インフラストラクチャ",
+    "h3.Stack.tittle": "私たちのスタック",
+    "p.Stack.description": "世界で最も革新的な企業を支えるツールをマスターしています。",
+    "h2.Work.title": "私たちの能力を見てみたいですか？",
+    "p.Work.description": "私たちの成功事例を探索し、複雑なアイデアをスケーラブルで高性能なプラットフォームに変換した方法を発見してください。",
+    "btn.viewWork": "私たちの仕事を見る",
+    "btn.contactUs": "お問い合わせ",
+    "p.Footer.description": "デジタルの未来を構築する。私たちは、革新的な企業のために、複雑なアイデアをスケーラブルで安全かつ高性能なソフトウェアに変換します。",
+    "h4.Footer.title": "会社",
+    "a.Footer.about": "私たちについて",
+    "a.Footer.services": "技術ブログ",
+    "a.Footer.contact": "お問い合わせ",
+    "h4.Footer.title.2": "サービス",
+    "a.Footer.web": "ウェブ開発",
+    "a.Footer.cloud": "クラウドアーキテクチャ",
+    "h4.Footer.title.3": "法的",
+    "a.Footer.privacy": "プライバシーポリシー",     
+    "a.Footer.terms": "利用規約",
+    "a.Footer.cookies": "クッキーポリシー",
+    "p.Footer.copyright": "全著作権所有。",
+    "span.Footer.dev": "開発中"
+
 }

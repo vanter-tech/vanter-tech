@@ -22,5 +22,27 @@
     "span.TCard.subtitle": "Lighthouse Audit",
     "span.TCard.text": "Best Practices",
     "span.TCard.text2": "Performance",
-    "span.TCard.text3": "Optimization"
+    "span.TCard.text3": "Optimization",
+    "h2.Stack.tittle": "Infrastructure",
+    "h3.Stack.tittle": "Our Stack",
+    "p.Stack.description": "We master the tools that power the most innovative companies in the world.",
+    "h2.Work.title": "Want to see what we can do?",
+    "p.Work.description": "Explore our success stories and discover how we've transformed complex ideas into scalable and high-performance platforms for our clients.",
+    "btn.viewWork": "View Our Work",
+    "btn.contactUs": "Contact Us",
+    "p.Footer.description": "Building the digital future. We transform complex ideas into scalable, secure, and high-performance software for innovative companies.",
+    "h4.Footer.title": "Company",
+    "a.Footer.about": "About Us",
+    "a.Footer.services": "Technical Blog",
+    "a.Footer.contact": "Contact",
+    "h4.Footer.title.2": "Services",
+    "a.Footer.web": "Web Development",
+    "a.Footer.cloud": "Cloud Architecture",
+    "h4.Footer.title.3": "Legal",
+    "a.Footer.privacy": "Privacy Policy",
+    "a.Footer.terms": "Terms of Service",
+    "a.Footer.cookies": "Cookie Policy",
+    "p.Footer.copyright": "All rights reserved.",
+    "span.Footer.dev": "In Development"
+
 }
