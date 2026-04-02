@@ -8,6 +8,11 @@ interface Props {
 const { lang } = Astro.props;
 const t = useTranslation(lang);
 
+const getRoute = (route: string) => {
+  if (lang === 'en') return `/${route}`;
+  return `/${lang}/${route}`;
+}
+
 ---
 
 <header class="fixed top-0 left-0 w-full z-50 bg-vanter-bg/80 backdrop-blur-md border-b-2 border-vanter-border">
@@ -28,9 +33,9 @@ const t = useTranslation(lang);
 
       <div class="hidden md:flex md:items-center md:gap-8">
         <ul class="flex gap-6">
-          <li><a href="/about" class="text-vanter-primary-text hover:text-vanter-secondary-text transition-colors">{t('nav.about')}</a></li>
-          <li><a href="/services" class="text-vanter-primary-text hover:text-vanter-secondary-text transition-colors">{t('nav.services')}</a></li>
-          <li><a href="/contact" class="text-vanter-primary-text hover:text-vanter-secondary-text transition-colors">{t('nav.contact')}</a></li>
+          <li><a href={getRoute('about')} class="text-vanter-primary-text hover:text-vanter-secondary-text transition-colors">{t('nav.about')}</a></li>
+          <li><a href={getRoute('services')} class="text-vanter-primary-text hover:text-vanter-secondary-text transition-colors">{t('nav.services')}</a></li>
+          <li><a href={getRoute('contact')} class="text-vanter-primary-text hover:text-vanter-secondary-text transition-colors">{t('nav.contact')}</a></li>
         </ul>
         <div class="flex gap-4">
           <button class="bg-vanter-bg text-vanter-primary-text font-bold py-2 px-4 rounded border-2 border-vanter-border hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
