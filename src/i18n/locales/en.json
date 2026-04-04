@@ -43,6 +43,21 @@
     "a.Footer.terms": "Terms of Service",
     "a.Footer.cookies": "Cookie Policy",
     "p.Footer.copyright": "All rights reserved.",
-    "span.Footer.dev": "In Development"
+    "span.Footer.dev": "In Development",
+    "h3.Tittle.AboutUs": "ABOUT US",
+    "h3.span.Tittle.AboutUs": "as a STACK of developers.",
+    "h4.FC.Tittle.AboutUs": "Our history and vision",
+    "p.FC.AboutUs": "Vanter was born from the shared vision of two developers in Nicaragua with an absolute purpose: to build world-class software without borders. What started as an alliance between friends, today operates as a dedicated engineering command exporting high-level technology for the global market.",
+    "p.FC.AboutUs.2": "We understand that code is just a tool; the real goal is efficiency. We specialize in solving operational chaos through intelligent automation. We help from local micro-businesses to international companies eliminate manual processes, architecting scalable systems in the cloud that allow them to compete at the highest level.",
+    "p.FC.AboutUs.3": "We fuse the agility and hunger of a young startup with the technical rigor of modern engineering. Whether launching our own SaaS products for the world or digitizing a client's infrastructure, we ensure secure systems, seamless integrations, and future-proof solutions.",
+    "div.FC.subtittle.AboutUs": "Hours of code",
+    "div.FC.subtittle.AboutUs.2": "Technical Debt",
+    "div.FC.subtittle.AboutUs.3": "Own Code",
+    "h4.SC.Tittle.AboutUs": "Our engineering culture",
+    "p.SC.AboutUs": "We apply the most relentless methodologies in the industry. Every line of code is subjected to peer reviews, automated testing, and continuous integration (CI/CD) flows to ensure zero friction in the production environment.",
+    "h4.TC.Tittle.AboutUs": "Radical Transparency",
+    "p.TC.AboutUs": "We eliminate black boxes. You are the sole owner of your infrastructure and source code. We develop to grant you absolute independence, always backed by tangible performance metrics.",
+    "span.TC.subtittle.AboutUs": "Performance",
+    "span.TC.subtittle.AboutUs.2": "Accessibility"
 
 }

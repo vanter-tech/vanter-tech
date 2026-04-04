@@ -43,6 +43,21 @@
     "a.Footer.terms": "Conditions d'Utilisation",
     "a.Footer.cookies": "Politique de Cookies",
     "p.Footer.copyright": "Tous droits réservés.",
-    "span.Footer.dev": "En Développement"
+    "span.Footer.dev": "En Développement",
+    "h3.Tittle.AboutUs": "À PROPOS DE NOUS",
+    "h3.span.Tittle.AboutUs": "en tant que STACK de développeurs.",
+    "h4.FC.Tittle.AboutUs": "Notre histoire et vision",
+    "p.FC.AboutUs": "Vanter est né de la vision partagée de deux développeurs au Nicaragua avec un objectif absolu : construire un logiciel de classe mondiale sans frontières. Ce qui a commencé comme une alliance entre amis, aujourd'hui opère comme un commandement d'ingénierie dédié à l'exportation de technologie de haut niveau pour le marché mondial.",
+    "p.FC.AboutUs.2": "Nous comprenons que le code n'est qu'un outil ; le véritable objectif est l'efficacité. Nous sommes spécialisés dans la résolution du chaos opérationnel grâce à l'automatisation intelligente. Nous aidons des micro-entreprises locales aux entreprises internationales à éliminer les processus manuels, en architecturant des systèmes évolutifs dans le cloud qui leur permettent de concurrencer au plus haut niveau.",
+    "p.FC.AboutUs.3": "Nous fusionnons l'agilité et la faim d'une jeune startup avec la rigueur technique de l'ingénierie moderne. Que ce soit en lançant nos propres produits SaaS pour le monde ou en numérisant l'infrastructure d'un client, nous assurons des systèmes sécurisés, des intégrations fluides et des solutions à l'épreuve du futur.",
+    "div.FC.subtittle.AboutUs": "Heures de code",
+    "div.FC.subtittle.AboutUs.2": "Dette Technique",
+    "div.FC.subtittle.AboutUs.3": "Code Propre",
+    "h4.SC.Tittle.AboutUs": "Notre culture d'ingénierie",
+    "p.SC.AboutUs": "Nous appliquons les méthodologies les plus implacables de l'industrie. Chaque ligne de code est soumise à des revues par les pairs, des tests automatisés et des flux d'intégration continue (CI/CD) pour assurer une friction zéro dans l'environnement de production.",
+    "h4.TC.Tittle.AboutUs": "Transparence Radical",
+    "p.TC.AboutUs": "Nous éliminons les boîtes noires. Vous êtes le seul propriétaire de votre infrastructure et de votre code source. Nous développons pour vous accorder une indépendance absolue, toujours soutenue par des métriques de performance tangibles.",
+    "span.TC.subtittle.AboutUs": "Performance",
+    "span.TC.subtittle.AboutUs.2": "Accessibilité"
 
 }

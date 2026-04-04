@@ -42,5 +42,20 @@
     "a.Footer.terms": "Términos de Servicio",
     "a.Footer.cookies": "Política de Cookies",
     "p.Footer.copyright": "Todos los derechos reservados.",
-    "span.Footer.dev": "En Desarrollo"
+    "span.Footer.dev": "En Desarrollo",
+    "h3.Tittle.AboutUs": "NOSOTROS",
+    "h3.span.Tittle.AboutUs": "como STACK de desarrolladores.",
+    "h4.FC.Tittle.AboutUs": "Nuestra historia y visión",
+    "p.FC.AboutUs": "Vanter nació de la visión compartida de dos desarrolladores en Nicaragua con un propósito absoluto: construir software de clase mundial sin fronteras. Lo que comenzó como una alianza entre amigos, hoy opera como un comando de ingeniería dedicado a exportar tecnología de alto nivel para el mercado global.",
+    "p.FC.AboutUs.2": "Entendemos que el código es solo una herramienta; el objetivo real es la eficiencia. Nos especializamos en resolver el caos operativo a través de la automatización inteligente. Ayudamos desde microempresas locales hasta compañías internacionales a eliminar procesos manuales, arquitectando sistemas escalables en la nube que les permiten competir al máximo nivel.",
+    "p.FC.AboutUs.3": "Fusionamos la agilidad y el hambre de una startup joven con el rigor técnico de la ingeniería moderna. Ya sea lanzando nuestros propios productos SaaS para el mundo o digitalizando la infraestructura de un cliente, aseguramos sistemas seguros, integraciones fluidas y soluciones a prueba del futuro.",
+    "div.FC.subtittle.AboutUs": "Horas de código",
+    "div.FC.subtittle.AboutUs.2": "Deuda Técnica",
+    "div.FC.subtittle.AboutUs.3": "Código Propio",
+    "h4.SC.Tittle.AboutUs": "Nuestra cultura de ingeniería",
+    "p.SC.AboutUs": "Aplicamos las metodologías más implacables de la industria. Cada línea de código es sometida a revisiones por pares, pruebas automatizadas y flujos de integración continua (CI/CD) para asegurar cero fricción en el entorno de producción.",
+    "h4.TC.Tittle.AboutUs": "Transparencia Radical",
+    "p.TC.AboutUs": "Eliminamos las cajas negras. Tú eres el único propietario de tu infraestructura y código fuente. Desarrollamos para otorgarte independencia absoluta, siempre respaldada por métricas de rendimiento tangibles.",
+    "span.TC.subtittle.AboutUs": "Rendimiento",
+    "span.TC.subtittle.AboutUs.2": "Accesibilidad"
 }
