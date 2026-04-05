@@ -15,6 +15,9 @@ jobs:
       - name: Descargar el código del repositorio
         uses: actions/checkout@v4
 
+      - name: Instalar pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
