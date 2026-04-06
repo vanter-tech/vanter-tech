@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets';
+
+// Definimos qué información necesita este componente para funcionar
+interface Props {
+  project: any;
+  lang: 'en' | 'es' | 'fr' | 'jp';
+}
+
+const { project, lang } = Astro.props;
+
+// Hacemos el botón de regresar dinámico según el idioma
+const backUrl = lang === 'en' ? '/services' : `/${lang}/services`;
+const backText = lang === 'en' ? '← Back to services' : '← Volver a servicios';
+---
+
+<main class="w-full pt-32 px-6 bg-vanter-bg min-h-screen text-white">
+  <div class="max-w-4xl mx-auto">
+    
+    <a href={backUrl} class="text-gray-400 hover:text-white mb-8 inline-block transition-colors font-vanter-code">
+      {backText}
+    </a>
+
+    <div class="mb-12">
+      <span class="text-blue-400 text-sm font-bold uppercase tracking-widest">{project.data.category}</span>
+      <h1 class="text-5xl md:text-7xl font-bold mt-2 mb-6">{project.data.title}</h1>
+      <p class="text-xl text-gray-400 leading-relaxed text-pretty">{project.data.description}</p>
+    </div>
+
+    <div class="rounded-3xl overflow-hidden border border-white/10 mb-16 shadow-2xl">
+      <Image src={project.data.mainImage} alt={project.data.title} class="w-full h-auto object-cover" />
+    </div>
+
+    <div class="mb-16">
+      <h3 class="text-2xl font-bold mb-6 font-vanter-code">Stack Tecnológico</h3>
+      <div class="flex flex-wrap gap-3">
+        {project.data.technologies.map((tech: string) => (
+          <span class="px-4 py-2 bg-[#0a0a0a] border border-white/10 rounded-lg text-sm text-gray-300 font-vanter-code">
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</main>

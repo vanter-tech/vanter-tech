@@ -7,6 +7,7 @@
     "btn.getStarted": "Comenzar",
     "btn.pricing": "Precios",
     "btn.more": "Más",
+    "services.title": "Nuestros Servicios",
     "title.h2": "Escala tu software",
     "title.FCard.h2.v2":"sin cambiar de equipo",
     "title.FCard.h3": "Arquitectura y Código Limpio",
@@ -57,5 +58,8 @@
     "h4.TC.Tittle.AboutUs": "Transparencia Radical",
     "p.TC.AboutUs": "Eliminamos las cajas negras. Tú eres el único propietario de tu infraestructura y código fuente. Desarrollamos para otorgarte independencia absoluta, siempre respaldada por métricas de rendimiento tangibles.",
     "span.TC.subtittle.AboutUs": "Rendimiento",
-    "span.TC.subtittle.AboutUs.2": "Accesibilidad"
+    "span.TC.subtittle.AboutUs.2": "Accesibilidad",
+    "h2.Tittle.Services":"NUESTROS PROYECTOS",
+    "a.subtittle.Services":"Ver Proyecto"
+
 }

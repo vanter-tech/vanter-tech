@@ -58,6 +58,8 @@
     "h4.TC.Tittle.AboutUs": "ラジカルな透明性",
     "p.TC.AboutUs": "私たちはブラックボックスを排除します。あなたはあなたのインフラストラクチャとソースコードの唯一の所有者です。私たちは、常に具体的なパフォーマンス指標に裏打ちされた絶対的な独立性をあなたに与えるために開発します。",
     "span.TC.subtittle.AboutUs": "パフォーマンス",
-    "span.TC.subtittle.AboutUs.2": "アクセシビリティ"
+    "span.TC.subtittle.AboutUs.2": "アクセシビリティ",
+    "h2.Tittle.Services":"私たちのプロジェクト",
+    "a.subtittle.Services":"プロジェクトを見る"
 
 }

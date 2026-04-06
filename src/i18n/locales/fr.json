@@ -58,6 +58,8 @@
     "h4.TC.Tittle.AboutUs": "Transparence Radical",
     "p.TC.AboutUs": "Nous éliminons les boîtes noires. Vous êtes le seul propriétaire de votre infrastructure et de votre code source. Nous développons pour vous accorder une indépendance absolue, toujours soutenue par des métriques de performance tangibles.",
     "span.TC.subtittle.AboutUs": "Performance",
-    "span.TC.subtittle.AboutUs.2": "Accessibilité"
+    "span.TC.subtittle.AboutUs.2": "Accessibilité",
+    "h2.Tittle.Services":"NOS PROJETS",
+    "a.subtittle.Services":"Voir Projet"
 
 }

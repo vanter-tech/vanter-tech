@@ -1,17 +1,21 @@
 import { defineCollection} from "astro:content";
 import { z } from "astro/zod";
 
-const project = defineCollection({
-    
-    schema: z.object({
+import { glob } from "astro/loaders";
+
+const projects = defineCollection({
+    loader: glob({ pattern: "**/*.md", base: "./src/content/projects" }),
+
+    schema: ({ image }) => z.object({
         title: z.string(),
         description: z.string(),
         category: z.string(),
         technologies: z.array(z.string()),
-        mainImage: z.string(),
+
+        mainImage: image(),
 
         gallery: z.array(z.object({
-            url: z.string(),
+            url: image(),
             alt: z.string(),
             description: z.string()
         })),
@@ -19,4 +23,6 @@ const project = defineCollection({
     }),
 });
 
-export const collections = { project };
+export const collections = { 
+    projects: projects 
+};
