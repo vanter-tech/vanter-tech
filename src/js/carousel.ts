@@ -40,6 +40,34 @@ function inicializarCarruseles() {
             const index = Number(dot.getAttribute('data-dot'));
             dot.addEventListener('click', () => goToSlide(index));
         });
+
+        let startX = 0;
+        let endX = 0;
+
+        track.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        }, { passive: true });
+
+        track.addEventListener('touchmove', (e) => {
+            endX = e.touches[0].clientX;
+        }, { passive: true });
+
+        track.addEventListener('touchend', () => {
+            if(!startX || !endX) return;
+
+            const diffX = startX - endX;
+            const threshold = 50;
+
+            if(diffX > threshold){
+                goToSlide(currentIndex + 1);
+            }else if(diffX < -threshold){
+                goToSlide(currentIndex - 1);
+            }
+
+            startX = 0;
+            endX = 0;
+        });
+
     });
 }
 

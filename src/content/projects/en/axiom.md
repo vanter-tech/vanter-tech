@@ -17,5 +17,8 @@ gallery:
   - url: "../../../assets/projects/axiom/axiom-img-employees.png"
     alt: "Employees"
     description: "Dashboard design to check all the school employees."
+  - url: "../../../assets/projects/axiom/axiom-img-presence.png"
+    alt: "Employees"
+    description: "Dashboard design to check all the school employees."
 featured: true
 ---
