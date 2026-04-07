@@ -61,6 +61,7 @@
     "span.TC.subtittle.AboutUs.2": "Accesibilidad",
     "h2.Tittle.Services":"NUESTROS PROYECTOS",
     "a.subtittle.Services":"Ver Proyecto",
+    "a.subtittle.ProjectDetail":"← Volver a los Proyectos",
     "h3.Tittle.ProjectDetail": "Stack Tecnológico"
 
 }

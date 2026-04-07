@@ -13,14 +13,14 @@ const t = useTranslation(lang);
 
 // Hacemos el botón de regresar dinámico según el idioma
 const backUrl = lang === 'en' ? '/services' : `/${lang}/services`;
-const backText = lang === 'en' ? '← Back to services' : '← Volver a servicios';
+const backText = lang === 'en';
 ---
 
 <main class="w-full pt-32 px-6 bg-vanter-bg min-h-screen text-white">
   <div class="max-w-4xl mx-auto">
     
     <a href={backUrl} class="text-gray-400 hover:text-white mb-8 inline-block transition-colors font-vanter-code">
-      {backText}
+      {t('a.subtittle.ProjectDetail')}
     </a>
 
     <div class="mb-12">
