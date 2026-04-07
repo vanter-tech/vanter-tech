@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import { useTranslation } from '../i18n/ui';
 
 // Definimos qué información necesita este componente para funcionar
 interface Props {
@@ -8,6 +9,7 @@ interface Props {
 }
 
 const { project, lang } = Astro.props;
+const t = useTranslation(lang);
 
 // Hacemos el botón de regresar dinámico según el idioma
 const backUrl = lang === 'en' ? '/services' : `/${lang}/services`;
@@ -32,7 +34,7 @@ const backText = lang === 'en' ? '← Back to services' : '← Volver a servicio
     </div>
 
     <div class="mb-16">
-      <h3 class="text-2xl font-bold mb-6 font-vanter-code">Stack Tecnológico</h3>
+      <h3 class="text-2xl font-bold mb-6 font-vanter-code">{t('h3.Tittle.ProjectDetail')}</h3>
       <div class="flex flex-wrap gap-3">
         {project.data.technologies.map((tech: string) => (
           <span class="px-4 py-2 bg-[#0a0a0a] border border-white/10 rounded-lg text-sm text-gray-300 font-vanter-code">

@@ -60,6 +60,7 @@
     "span.TC.subtittle.AboutUs": "パフォーマンス",
     "span.TC.subtittle.AboutUs.2": "アクセシビリティ",
     "h2.Tittle.Services":"私たちのプロジェクト",
-    "a.subtittle.Services":"プロジェクトを見る"
+    "a.subtittle.Services":"プロジェクトを見る",
+    "h3.Tittle.ProjectDetail": "技術スタック"
 
 }

@@ -1,6 +1,6 @@
 ---
 title: "Axiom"
-description: "Software centralizado en el manejo de información escolar."
+description: "Centralized software aim to manage scholar information."
 category: "Software"
 technologies: 
   - "TypeScript"
@@ -13,9 +13,9 @@ mainImage: "../../../assets/projects/axiom/panel.png"
 gallery: 
   - url: "../../../assets/projects/axiom/panel.png" 
     alt: "Panel de control"
-    description: "Vista principal del dashboard con métricas en tiempo real."
+    description: "Dashboard mainview and real time data"
   - url: "../../../assets/projects/axiom/panel.png" 
     alt: "Mobile view"
-    description: "Interfaz responsiva para gestión en cualquier dispositivo."
+    description: "Responsive inferface adaptated to every device."
 featured: true
 ---
