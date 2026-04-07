@@ -14,8 +14,8 @@ gallery:
   - url: "../../../assets/projects/axiom/axiom-img-dashboard.png" 
     alt: "Control panel"
     description: "Main dashboard view displaying real-time metrics."
-  - url: "../../../assets/projects/axiom/axiom-img-dashboard.png"
-    alt: "Mobile view"
-    description: "Responsive interface designed for all devices."
+  - url: "../../../assets/projects/axiom/axiom-img-employees.png"
+    alt: "Employees"
+    description: "Dashboard design to check all the school employees."
 featured: true
 ---

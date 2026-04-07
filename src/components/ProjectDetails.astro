@@ -11,7 +11,6 @@ const { project, lang } = Astro.props;
 const t = useTranslation(lang);
 
 const backUrl = lang === 'en' ? '/services' : `/${lang}/services`;
-const backText = lang === 'en';
 ---
 
 <main class="w-full pt-32 px-6 bg-vanter-bg min-h-screen text-white">
@@ -27,10 +26,43 @@ const backText = lang === 'en';
       <p class="text-xl text-gray-400 leading-relaxed text-pretty">{project.data.description}</p>
     </div>
 
-    <div class="rounded-3xl overflow-hidden border border-white/10 mb-16 shadow-2xl">
-      <Image src={project.data.mainImage} alt={project.data.title} class="w-full h-auto object-cover" />
-    </div>
+    <div class="relative rounded-3xl overflow-hidden border border-white/10 mb-16 shadow-2xl group" data-carousel>
+      
+      <div class="flex transition-transform duration-500 ease-in-out" data-track>
+        {project.data.gallery.map((img: any, index: number) => (
+          <div class="min-w-full relative" data-index={index}>
+            <Image src={img.url} alt={img.alt} class="w-full h-auto object-cover aspect-video" />
+            
+            <div class="absolute bottom-10 left-0 w-full text-center pointer-events-none">
+              <span class="bg-black/60 backdrop-blur-md px-4 py-2 rounded-lg text-sm text-gray-200 inline-block">
+                {img.description}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
 
+      <button 
+        class="absolute z-10 top-1/2 left-4 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white w-10 h-10 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm" 
+        data-prev>
+        ←
+      </button>
+      <button 
+        class="absolute z-10 top-1/2 right-4 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white w-10 h-10 flex items-center justify-center rounded-full opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm" 
+        data-next>
+        →
+      </button>
+
+      <div class="absolute z-10 bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+        {project.data.gallery.map((_: any, index: number) => (
+          <button
+            class={`w-3 h-3 rounded-full border border-white/50 transition-colors ${index === 0 ? 'bg-white' : 'bg-transparent'}`}
+            data-dot={index}
+            aria-label={`Ir a imagen ${index + 1}`}
+          ></button>
+        ))}
+      </div>
+    </div>
     <div class="mb-16">
       <h3 class="text-2xl font-bold mb-6 font-vanter-code">{t('h3.Tittle.ProjectDetail')}</h3>
       <div class="flex flex-wrap gap-3">
@@ -44,3 +76,5 @@ const backText = lang === 'en';
 
   </div>
 </main>
+
+<script src="/src/js/carousel.ts"></script>
