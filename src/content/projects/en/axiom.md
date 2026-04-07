@@ -9,12 +9,12 @@ technologies:
   - "Mux"
   - "SheetJS"
   - "GCP"
-mainImage: "../../../assets/projects/axiom/panel.png" 
+mainImage: "../../../assets/projects/axiom/axiom-img-dashboard.png" 
 gallery: 
-  - url: "../../../assets/projects/axiom/panel.png" 
+  - url: "../../../assets/projects/axiom/axiom-img-dashboard.png" 
     alt: "Control panel"
     description: "Main dashboard view displaying real-time metrics."
-  - url: "../../../assets/projects/axiom/panel.png" 
+  - url: "../../../assets/projects/axiom/axiom-img-dashboard.png"
     alt: "Mobile view"
     description: "Responsive interface designed for all devices."
 featured: true
