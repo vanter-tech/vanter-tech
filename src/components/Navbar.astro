@@ -51,13 +51,13 @@ const getRoute = (route: string) => {
         
         <ul class="flex flex-col gap-6 text-center">
           <li class="menu-item opacity-0 translate-y-4 transition-all duration-300">
-            <a href="/about" class="text-vanter-primary-text text-xl">{t('nav.about')}</a>
+            <a href={getRoute('about')} class="text-vanter-primary-text text-xl">{t('nav.about')}</a>
           </li>
           <li class="menu-item opacity-0 translate-y-4 transition-all duration-300">
-            <a href="/services" class="text-vanter-primary-text text-xl">{t('nav.services')}</a>
+            <a href={getRoute('services')} class="text-vanter-primary-text text-xl">{t('nav.services')}</a>
           </li>
           <li class="menu-item opacity-0 translate-y-4 transition-all duration-300">
-            <a href="/contact" class="text-vanter-primary-text text-xl">{t('nav.contact')}</a>
+            <a href={getRoute('contact')} class="text-vanter-primary-text text-xl">{t('nav.contact')}</a>
           </li>
         </ul>
 

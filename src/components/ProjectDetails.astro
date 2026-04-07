@@ -2,7 +2,6 @@
 import { Image } from 'astro:assets';
 import { useTranslation } from '../i18n/ui';
 
-// Definimos qué información necesita este componente para funcionar
 interface Props {
   project: any;
   lang: 'en' | 'es' | 'fr' | 'jp';
@@ -11,7 +10,6 @@ interface Props {
 const { project, lang } = Astro.props;
 const t = useTranslation(lang);
 
-// Hacemos el botón de regresar dinámico según el idioma
 const backUrl = lang === 'en' ? '/services' : `/${lang}/services`;
 const backText = lang === 'en';
 ---
