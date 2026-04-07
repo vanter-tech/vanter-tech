@@ -1,7 +1,7 @@
 ---
 title: "Axiom"
-description: "Software centralizado en el manejo de información escolar."
-category: "Software"
+description: "Logiciel centralisé pour la gestion des informations scolaires."
+category: "Logiciel"
 technologies: 
   - "TypeScript"
   - "Go"
@@ -12,10 +12,10 @@ technologies:
 mainImage: "../../../assets/projects/axiom/panel.png" 
 gallery: 
   - url: "../../../assets/projects/axiom/panel.png" 
-    alt: "Panel de control"
-    description: "Vista principal del dashboard con métricas en tiempo real."
+    alt: "Tableau de bord"
+    description: "Vue principale du dashboard avec des métriques en temps réel."
   - url: "../../../assets/projects/axiom/panel.png" 
-    alt: "Mobile view"
-    description: "Interfaz responsiva para gestión en cualquier dispositivo."
+    alt: "Vue mobile"
+    description: "Interface responsive pour la gestion sur tous les appareils."
 featured: true
 ---
