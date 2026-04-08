@@ -65,6 +65,17 @@
     "h3.Tittle.ProjectDetail": "Technological Stack",
     "h2.tittle.section.ProjectDetail": "Need a project like this?",
     "p.description.section.ProjectDetail": "If you're interested in developing a similar project or have an idea in mind, don't hesitate to contact us. We're here to help you turn your ideas into reality with innovative and customized solutions.",
-    "a.section.ProjectDetail.viewWork": "Contact Us"
+    "a.section.ProjectDetail.viewWork": "Contact Us",
+    "span.subtittle.ContactUs": "Connect with us",
+    "h2.tittle.ContactUs": "Start your",
+    "h2.tittle.ContactUs.2": "System",
+    "p.description.ContactUs": "Send us your requirements and our team will execute the code needed to take your project to the next level.",
+    "label.form.ContactUs": "Full Name",
+    "input.placeholder.form.ContactUs": "e.g. John Doe",
+    "label.form.ContactUs.2": "Email",
+    "input.placeholder.form.ContactUs.2": "business@example.com",
+    "label.form.ContactUs.3": "Message",
+    "textarea.form.ContactUs": "Tell us about your project or idea...",
+    "btn.form.ContactUs": "Send Message"
 
 }

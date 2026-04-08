@@ -65,6 +65,17 @@
     "h3.Tittle.ProjectDetail": "技術スタック",
     "h2.tittle.section.ProjectDetail": "このようなプロジェクトが必要ですか？",
     "p.description.section.ProjectDetail": "同様のプロジェクトの開発に興味がある場合や、アイデアがある場合は、お気軽にお問い合わせください。革新的でカスタマイズされたソリューションで、あなたのアイデアを現実に変えるお手伝いをするためにここにいます。",
-    "a.section.ProjectDetail.viewWork": "お問い合わせ"
+    "a.section.ProjectDetail.viewWork": "お問い合わせ",
+    "span.subtittle.ContactUs": "お問い合わせください",
+    "h2.tittle.ContactUs": "あなたの",
+    "h2.tittle.ContactUs.2": "システムを開始",
+    "p.description.ContactUs": "ご要件をお送りください。当社のチームが、プロジェクトを次のレベルに引き上げるために必要なコードを実行します。",
+    "label.form.ContactUs": "氏名",
+    "input.placeholder.form.ContactUs": "例: John Doe",
+    "label.form.ContactUs.2": "メールアドレス",
+    "input.placeholder.form.ContactUs.2": "business@example.com",
+    "label.form.ContactUs.3": "メッセージ",
+    "textarea.form.ContactUs": "プロジェクトやアイデアについて教えてください...",
+    "btn.form.ContactUs": "メッセージを送信"
 
 }

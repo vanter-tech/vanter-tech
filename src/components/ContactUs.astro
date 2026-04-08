@@ -1,12 +1,12 @@
 ---
-// import { useTranslation } from '../i18n/ui';
+import { useTranslation } from '../i18n/ui';
 
 interface Props {
   lang: 'en' | 'es' | 'fr' | 'jp';
 }
 
 const { lang } = Astro.props;
-// const t = useTranslation(lang);
+const t = useTranslation(lang);
 ---
 
 <section class="pt-32 pb-24 px-6 bg-vanter-bg text-white relative overflow-hidden" id="contact">
@@ -16,12 +16,12 @@ const { lang } = Astro.props;
   <div class="max-w-7xl mx-auto relative z-10">
     
     <div class="text-center mb-16 md:mb-20">
-      <span class="text-blue-400 text-sm font-bold uppercase tracking-widest mb-3 block">Conecta con nosotros</span>
+      <span class="text-blue-400 text-sm font-bold uppercase tracking-widest mb-3 block">{t('span.subtittle.ContactUs')}</span>
       <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold font-vanter-code mb-4">
-        Inicia tu <span class="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-500">Sistema</span>
+        {t('h2.tittle.ContactUs')} <span class="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-500">{t('h2.tittle.ContactUs.2')}</span>
       </h2>
       <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-        Envíanos tus requerimientos y nuestro equipo ejecutará el código necesario para llevar tu proyecto al siguiente nivel.
+        {t('p.description.ContactUs')}
       </p>
     </div>
 
@@ -85,22 +85,22 @@ __   __ _    _  _ _____ ___ ___
             <input type="hidden" name="access_key" value="TU_API_KEY_AQUI">
             
             <div class="flex flex-col gap-2 group">
-              <label for="name" class="text-sm font-vanter-code text-gray-400 group-focus-within:text-blue-400 transition-colors">Nombre Completo</label>
-              <input type="text" id="name" name="name" required class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-blue-400 focus:bg-white/5 transition-all placeholder:text-gray-600 rounded-t-md" placeholder="Ej. Juan Pérez" />
+              <label for="name" class="text-sm font-vanter-code text-gray-400 group-focus-within:text-blue-400 transition-colors">{t('label.form.ContactUs')}</label>
+              <input type="text" id="name" name="name" required class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-blue-400 focus:bg-white/5 transition-all placeholder:text-gray-600 rounded-t-md" placeholder={t('input.placeholder.form.ContactUs')} />
             </div>
 
             <div class="flex flex-col gap-2 group">
-              <label for="email" class="text-sm font-vanter-code text-gray-400 group-focus-within:text-blue-400 transition-colors">Correo Electrónico</label>
-              <input type="email" id="email" name="email" required class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-blue-400 focus:bg-white/5 transition-all placeholder:text-gray-600 rounded-t-md" placeholder="juan@empresa.com" />
+              <label for="email" class="text-sm font-vanter-code text-gray-400 group-focus-within:text-blue-400 transition-colors">{t('label.form.ContactUs.2')}</label>
+              <input type="email" id="email" name="email" required class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-blue-400 focus:bg-white/5 transition-all placeholder:text-gray-600 rounded-t-md" placeholder={t('input.placeholder.form.ContactUs')} />
             </div>
 
             <div class="flex flex-col gap-2 group">
-              <label for="message" class="text-sm font-vanter-code text-gray-400 group-focus-within:text-blue-400 transition-colors">Mensaje</label>
-              <textarea id="message" name="message" rows="4" required class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-blue-400 focus:bg-white/5 transition-all placeholder:text-gray-600 resize-none rounded-t-md" placeholder="Cuéntanos sobre tu proyecto o idea..."></textarea>
+              <label for="message" class="text-sm font-vanter-code text-gray-400 group-focus-within:text-blue-400 transition-colors">{t('label.form.ContactUs.3')}</label>
+              <textarea id="message" name="message" rows="4" required class="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-blue-400 focus:bg-white/5 transition-all placeholder:text-gray-600 resize-none rounded-t-md" placeholder={t('textarea.form.ContactUs')} ></textarea>
             </div>
 
             <button type="submit" class="mt-4 bg-white text-black font-bold py-4 rounded-xl hover:bg-blue-400 hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] hover:text-white transition-all duration-300 transform hover:-translate-y-1">
-              Enviar Mensaje
+              {t('btn.form.ContactUs')}
             </button>
           </form>
         </div>
