@@ -18,7 +18,7 @@ const getRoute = (route: string) => {
 ---
 
 
-<main class="w-full pt-32">
+<main class="w-full pt-32 overflow-x-hidden">
   
   <div class="flex flex-col items-center w-full px-4 relative"> 
       <div class="relative max-w-5xl w-full text-center"> 
@@ -27,8 +27,8 @@ const getRoute = (route: string) => {
               {t('hero.mainTitle')}
           </h1>
 
-          <div class="absolute inset-0 w-full h-full flex justify-center">
-              <h1 class="text-5xl md:text-7xl lg:text-[6rem] leading-tight text-vanter-primary-text font-bold text-center">
+          <div class="absolute inset-0 w-full h-full flex justify-center px-2">
+              <h1 class="text-5xl md:text-7xl lg:text-[6rem] leading-tight text-vanter-primary-text font-bold text-center break-words">
                   <Typerwriter text={t('hero.mainTitle')} typingSpeed={80} />
               </h1>
           </div>
@@ -36,11 +36,11 @@ const getRoute = (route: string) => {
     </div>
   </div>
 
-  <div class="text-center gap-3 mt-10 flex justify-center px-4">
-      <button class="bg-vanter-bg text-vanter-primary-text font-bold h-15 w-55 py-2 px-4 rounded border-2 border-vanter cursor-pointer hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
+  <div class="text-center gap-4 mt-10 flex flex-col sm:flex-row justify-center px-6 max-w-sm sm:max-w-none mx-auto">
+      <button class="w-full sm:w-auto bg-vanter-bg text-vanter-primary-text font-bold h-14 py-2 px-8 rounded border-2 border-vanter cursor-pointer hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
           {t('btn.diveIntoIt')}
       </button>
-      <button class="bg-vanter-bg text-vanter-primary-text font-bold h-15 w-55 py-2 px-4 rounded border-2 border-vanter cursor-pointer hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
+      <button class="w-full sm:w-auto bg-vanter-bg text-vanter-primary-text font-bold h-14 py-2 px-8 rounded border-2 border-vanter cursor-pointer hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
           {t('btn.getStarted')}
       </button>
   </div>
