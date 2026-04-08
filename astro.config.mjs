@@ -1,8 +1,9 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-
 import tailwindcss from '@tailwindcss/vite';
 
+import { passthroughImageService } from 'astro/config';
+ 
 // https://astro.build/config
 export default defineConfig({
   vite: {
@@ -14,5 +15,9 @@ export default defineConfig({
     routing: {
       prefixDefaultLocale: false
     }
-  }
+  },
+
+  image: {
+    service: passthroughImageService(),
+  },
 });
