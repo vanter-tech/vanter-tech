@@ -19,7 +19,7 @@ function inicializarCarruseles() {
             if (index >= totalSlides) index = 0;
 
             currentIndex = index;
-            // Aquí está la magia del movimiento
+            
             track.style.transform = `translateX(-${currentIndex * 100}%)`;
 
             dots.forEach((dot, i) => {
