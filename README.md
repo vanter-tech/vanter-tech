@@ -1,64 +1,45 @@
-<div align="center">
-  <img src="./assets/vanter-tech_logo.png" alt="Vanter Tech Logo" width="200">
-  
-  <h1>Vanter Tech.</h1>
-  
-  <p>
-    <strong>Vanter Tech SPA - (PLACHEHOLDER).</strong>
-  </p>
+<p align="center">
+  <img src="assets/vanter-tech_logo.png" alt="Vanter Tech Logo" width="200px" />
+</p>
 
-  <p>
-    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" />
-    <img src="https://img.shields.io/badge/Astro-FF5D01?style=for-the-badge&logo=astro&logoColor=white" alt="ASTRO" />
-    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JS" />
-    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" />
-  </p>
-</div>
+<h1 align="center">Vanter</h1>
+
+<p align="center">
+  <strong>Transformando ideas complejas en sistemas digitales de alto rendimiento.</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+</p>
 
 ---
 
-```sh
-npm create astro@latest -- --template basics
-```
+## Sobre el Proyecto
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Este repositorio contiene el núcleo de la plataforma de **Vanter**, El sitio está construido con **Astro** para garantizar una velocidad de carga excepcional y una experiencia de usuario fluida (UX).
 
-## 🚀 Project Structure
+### Características Principales:
+-  **Arquitectura Orientada a Componentes:** Estructura modular y reutilizable.
+-  **i18n Nativo:** Soporte multilingüe (ES, EN, FR, JP).
+-  **Diseño Ultra-Responsivo:** Optimizado para cualquier dispositivo.
+-  **Estética Dark Premium:** Interfaz minimalista enfocada en la legibilidad.
 
-Inside of your Astro project, you'll see the following folders and files:
+---
+
+
+## 📂 Estructura del Repositorio
 
 ```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
+├── assets/             # Recursos estáticos (Logos, Iconos)
+├── src/
+│   ├── assets/         # Componentes de UI (Carruseles, Terminal, Form).
+│   ├── components/     # Archivos .astro.
+│   ├── content/        # Configuración de traducciones para los markdown.
+│   ├── i18n/           # Configuración de traducciones para los .astro.
+│   ├── js/             # Archivo JS and TS con logica de animacion.
+│   ├── layouts/        # Estructuras base de las páginas.
+│   ├── pages/          # Ruta de la pagina.
+│   └── styles/         # Variables CSS para la pagina.
+└── content.config.mjs  # Configuración del markdown para cad projecto
