@@ -31,7 +31,7 @@ const backUrl = lang === 'en' ? '/services' : `/${lang}/services`;
       <div class="flex transition-transform duration-500 ease-in-out" data-track>
         {project.data.gallery.map((img: any, index: number) => (
           <div class="min-w-full relative" data-index={index}>
-            <Image src={img.url} alt={img.alt} class="w-full h-auto object-cover aspect-video" />
+            <img src={img.url} alt={img.alt} class="w-full h-auto object-cover aspect-video" />
             
             <div class="absolute bottom-10 left-0 w-full text-center pointer-events-none">
               <span class="bg-black/60 backdrop-blur-md px-4 py-2 rounded-lg text-sm text-gray-200 inline-block">

@@ -31,7 +31,7 @@ const getProjectUrl = (id: string) => {
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       {project.map((project) => (
         <div class="group bg-[#0a0a0a] border border-white/10 rounded-3xl overflow-hidden hover:border-blue-500/50 transition-all duration-500">
-          <Image src={project.data.mainImage} alt={project.data.title} class="w-full h-64 object-cover" />
+          <img src={project.data.mainImage} alt={project.data.title} class="w-full h-64 object-cover" />
           
           <div class="p-8">
             <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">{project.data.category}</span>

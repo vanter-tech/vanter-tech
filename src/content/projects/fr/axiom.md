@@ -9,12 +9,12 @@ technologies:
   - "Mux"
   - "SheetJS"
   - "GCP"
-mainImage: "../../../assets/projects/axiom/axiom-img-dashboard.png" 
+mainImage: "/projects/axiom/axiom-img-dashboard.webp" 
 gallery: 
-  - url: "../../../assets/projects/axiom/axiom-img-dashboard.png"
+  - url: "/projects/axiom/axiom-img-dashboard.webp"
     alt: "Tableau de bord"
     description: "Vue principale du dashboard avec des métriques en temps réel."
-  - url: "../../../assets/projects/axiom/axiom-img-dashboard.png"
+  - url: "/projects/axiom/axiom-img-dashboard.webp"
     alt: "Vue mobile"
     description: "Interface responsive pour la gestion sur tous les appareils."
 featured: true

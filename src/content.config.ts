@@ -6,16 +6,16 @@ import { glob } from "astro/loaders";
 const projects = defineCollection({
     loader: glob({ pattern: "**/*.md", base: "./src/content/projects" }),
 
-    schema: ({ image }) => z.object({
+    schema: z.object({
         title: z.string(),
         description: z.string(),
         category: z.string(),
         technologies: z.array(z.string()),
 
-        mainImage: image(),
+        mainImage: z.string(),
 
         gallery: z.array(z.object({
-            url: image(),
+            url: z.string(),
             alt: z.string(),
             description: z.string()
         })),
