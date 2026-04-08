@@ -62,6 +62,9 @@
     "h2.Tittle.Services":"NOS PROJETS",
     "a.subtittle.Services":"Voir Projet",
     "a.subtittle.ProjectDetail":"← Retour aux Projets",
-    "h3.Tittle.ProjectDetail": "Stack Technologique"
+    "h3.Tittle.ProjectDetail": "Stack Technologique",
+    "h2.tittle.section.ProjectDetail": "Besoin d'un projet comme celui-ci ?",
+    "p.description.section.ProjectDetail": "Si vous êtes intéressé à développer un projet similaire ou avez une idée en tête, n'hésitez pas à nous contacter. Nous sommes là pour vous aider à transformer vos idées en réalité avec des solutions innovantes et personnalisées.",
+    "a.section.ProjectDetail.viewWork": "Contactez-nous"
 
 }

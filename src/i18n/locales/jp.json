@@ -62,6 +62,9 @@
     "h2.Tittle.Services":"私たちのプロジェクト",
     "a.subtittle.Services":"プロジェクトを見る",
     "a.subtittle.ProjectDetail":"← プロジェクトに戻る",
-    "h3.Tittle.ProjectDetail": "技術スタック"
+    "h3.Tittle.ProjectDetail": "技術スタック",
+    "h2.tittle.section.ProjectDetail": "このようなプロジェクトが必要ですか？",
+    "p.description.section.ProjectDetail": "同様のプロジェクトの開発に興味がある場合や、アイデアがある場合は、お気軽にお問い合わせください。革新的でカスタマイズされたソリューションで、あなたのアイデアを現実に変えるお手伝いをするためにここにいます。",
+    "a.section.ProjectDetail.viewWork": "お問い合わせ"
 
 }
