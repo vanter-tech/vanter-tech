@@ -9,7 +9,6 @@ const { lang } = Astro.props;
 const t = useTranslation(lang);
 
 const getRoute = (route: string) => {
-  if (lang === 'en') return `/${route}`;
   return `/${lang}/${route}`;
 }
 

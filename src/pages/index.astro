@@ -1,9 +1,24 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
 ---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Vanter</title>
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href="/vanter-tech_logo.ico" />
+  
+  <script is:inline>
+    const supportedLangs = ['en', 'es', 'fr', 'jp'];
+    
+    const userLang = (navigator.language || navigator.userLanguage).split('-')[0];
+    
+    const targetLang = supportedLangs.includes(userLang) ? userLang : 'en';
+    
+    window.location.replace(`/${targetLang}/`);
+  </script>
+</head>
 
-<Layout lang='en'>
-	<Welcome lang='en'/>
-</Layout>
+<body class="bg-vanter-bg h-screen w-screen m-0 p-0 overflow-hidden">
+</body>
+</html>

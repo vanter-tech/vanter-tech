@@ -10,7 +10,6 @@ const t = useTranslation(lang);
 
 //Will be used in the future when we have more pages.
 const getRoute = (route: string) => {
-  if (lang === 'en') return `/${route}`;
   return `/${lang}/${route}`;
 }
 
