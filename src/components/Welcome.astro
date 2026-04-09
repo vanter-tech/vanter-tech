@@ -37,12 +37,16 @@ const getRoute = (route: string) => {
   </div>
 
   <div class="text-center gap-4 mt-10 flex flex-col sm:flex-row justify-center px-6 max-w-sm sm:max-w-none mx-auto">
+    <a href={getRoute('services')}>  
       <button class="w-full sm:w-auto bg-vanter-bg text-vanter-primary-text font-bold h-14 py-2 px-8 rounded border-2 border-vanter cursor-pointer hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
           {t('btn.diveIntoIt')}
       </button>
+    </a>
+    <a href={getRoute('contact')}>
       <button class="w-full sm:w-auto bg-vanter-bg text-vanter-primary-text font-bold h-14 py-2 px-8 rounded border-2 border-vanter cursor-pointer hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
           {t('btn.getStarted')}
       </button>
+    </a>
   </div>
 
   <section class="bg-[#050505] text-white py-24 px-6">
