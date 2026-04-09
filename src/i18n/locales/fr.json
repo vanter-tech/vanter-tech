@@ -76,6 +76,9 @@
     "input.placeholder.form.ContactUs.2": "busine33@example.com",
     "label.form.ContactUs.3": "Message",
     "textarea.form.ContactUs": "Parlez-nous de votre projet ou idée...",
-    "btn.form.ContactUs": "Envoyer le message"
+    "btn.form.ContactUs": "Envoyer le message",
+    "p.form.status.sending.ContactUs": "Envoi du message...",
+    "p.form.status.sucess.ContactUs": "Message envoyé avec succès ! Nous vous contacterons bientôt.",
+    "p.form.status.error.ContactUs": "Une erreur de connexion s'est produite lors de l'envoi du message."
 
 }

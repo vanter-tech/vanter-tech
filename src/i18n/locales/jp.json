@@ -76,6 +76,9 @@
     "input.placeholder.form.ContactUs.2": "business@example.com",
     "label.form.ContactUs.3": "メッセージ",
     "textarea.form.ContactUs": "プロジェクトやアイデアについて教えてください...",
-    "btn.form.ContactUs": "メッセージを送信"
+    "btn.form.ContactUs": "メッセージを送信",
+    "p.form.status.sending.ContactUs": "メッセージを送信中...",
+    "p.form.status.sucess.ContactUs": "メッセージが正常に送信されました！追ってご連絡いたします。",
+    "p.form.status.error.ContactUs": "メッセージの送信中に接続エラーが発生しました。"
 
 }

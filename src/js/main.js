@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('burger-btn');
   const menu = document.getElementById('mobile-menu');
@@ -42,18 +43,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const form = document.getElementById('contact-form');
-  const result = document.getElementById('form-result');
+const result = document.getElementById('form-result');
 
   form.addEventListener('submit', function(e) {
 
     e.preventDefault(); 
     
     const formData = new FormData(form);
+    
+    const msgSending = form.dataset.msgSending
+    const msgSuccess = form.dataset.msgSuccess
+    const msgError = form.dataset.msgError
 
 
     result.classList.remove('hidden');
-    result.innerHTML = "Enviando mensaje...";
-    result.className = "mt-4 text-sm text-gray-400"; // Color neutro
+    result.innerHTML = msgSending;
+    result.className = "mt-4 text-sm text-gray-400"; 
 
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
@@ -63,7 +68,7 @@ const form = document.getElementById('contact-form');
       let json = await response.json();
       if (response.status == 200) {
 
-        result.innerHTML = "¡Mensaje enviado con éxito! Te contactaremos pronto.";
+        result.innerHTML = msgSuccess;
         result.className = "mt-4 text-sm font-bold text-green-500"; 
         form.reset(); 
       } else {
@@ -74,14 +79,14 @@ const form = document.getElementById('contact-form');
     })
     .catch(error => {
 
-      result.innerHTML = "Hubo un error de conexión al enviar el mensaje.";
+      result.innerHTML = msgError;
       result.className = "mt-4 text-sm font-bold text-red-500";
     })
     .then(function() {
 
       setTimeout(() => {
         result.classList.add('hidden');
-      }, 10000);
+      }, 5000);
     });
   });
 
