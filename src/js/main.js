@@ -41,4 +41,47 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+const form = document.getElementById('contact-form');
+  const result = document.getElementById('form-result');
+
+  form.addEventListener('submit', function(e) {
+
+    e.preventDefault(); 
+    
+    const formData = new FormData(form);
+
+
+    result.classList.remove('hidden');
+    result.innerHTML = "Enviando mensaje...";
+    result.className = "mt-4 text-sm text-gray-400"; // Color neutro
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    })
+    .then(async (response) => {
+      let json = await response.json();
+      if (response.status == 200) {
+
+        result.innerHTML = "¡Mensaje enviado con éxito! Te contactaremos pronto.";
+        result.className = "mt-4 text-sm font-bold text-green-500"; 
+        form.reset(); 
+      } else {
+
+        result.innerHTML = json.message;
+        result.className = "mt-4 text-sm font-bold text-red-500";
+      }
+    })
+    .catch(error => {
+
+      result.innerHTML = "Hubo un error de conexión al enviar el mensaje.";
+      result.className = "mt-4 text-sm font-bold text-red-500";
+    })
+    .then(function() {
+
+      setTimeout(() => {
+        result.classList.add('hidden');
+      }, 10000);
+    });
+  });
 
