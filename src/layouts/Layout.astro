@@ -17,6 +17,22 @@ const t = useTranslation(lang);
 <!doctype html>
 <html lang="en">
 	<head>
+		<title>Vanter</title>
+
+		 
+		{/* <script is:inline>
+
+			const userLang = navigator.language || navigator.userLanguage;
+			const currentPath = window.location.pathname;
+
+			if(userLang.startsWith('es') && currentPath === '/') {
+				window.location.pathname = '/es' + currentPath;
+			}
+
+		</script>
+		*/}
+
+
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/vanter-tech_logo.ico" />
@@ -27,18 +43,9 @@ const t = useTranslation(lang);
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 		
-		<script is:inline>
+		
 
-			const userLang = navigator.language || navigator.userLanguage;
-			const currerntPath = window.location.pathname;
-
-			if(userLang.startsWith('es') && currerntPath === '/') {
-				window.location.pathname = '/es' + currerntPath;
-			}
-
-		</script>
-
-		<title>Vanter</title>
+		
 	</head>
 	<body class="bg-vanter-bg color-vanter-primary-text font-vanter-code min-h-screen ">
 		<div>
