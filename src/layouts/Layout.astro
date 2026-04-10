@@ -2,14 +2,14 @@
 import '../styles/global.css';
 import Footer from '../components/Footer.astro';
 import Navbar from '../components/Navbar.astro';	
-
+import { ClientRouter } from 'astro:transitions';
 import { useTranslation } from '../i18n/ui';
 
 interface Props {
     lang: 'en' | 'es' | 'fr' | 'jp';
 }
 
-const { lang } = Astro.props;
+const { lang} = Astro.props;
 const t = useTranslation(lang);
 
 ---
@@ -30,7 +30,7 @@ const t = useTranslation(lang);
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 		
-		
+		<ClientRouter/>
 
 		
 	</head>
