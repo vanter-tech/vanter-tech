@@ -35,7 +35,7 @@ const { text, typingSpeed = 100 } = Astro.props;
 
         })
     }
-    document.addEventListener('DOMContentLoaded', initTypewriter);
+    document.addEventListener('astro:page-load', initTypewriter);
 </script>
 
 <style>
