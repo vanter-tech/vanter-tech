@@ -42,8 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-const form = document.getElementById('contact-form');
-const result = document.getElementById('form-result');
+function setupInteraction(){
+  const form = document.getElementById('contact-form');
+  const result = document.getElementById('form-result');
 
   form.addEventListener('submit', function(e) {
 
@@ -89,4 +90,7 @@ const result = document.getElementById('form-result');
       }, 5000);
     });
   });
+
+}
+document.addEventListener('astro:page-load', setupInteraction);
 
