@@ -79,6 +79,9 @@
     "btn.form.ContactUs": "メッセージを送信",
     "p.form.status.sending.ContactUs": "メッセージを送信中...",
     "p.form.status.sucess.ContactUs": "メッセージが正常に送信されました！追ってご連絡いたします。",
-    "p.form.status.error.ContactUs": "メッセージの送信中に接続エラーが発生しました。"
+    "p.form.status.error.ContactUs": "メッセージの送信中に接続エラーが発生しました。",
+    "title.legal.terms": "利用規約",
+    "title.legal.privacy": "プライバシーポリシー",
+    "title.legal.cookies": "クッキーポリシー"
 
 }

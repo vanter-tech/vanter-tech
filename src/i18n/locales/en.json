@@ -79,6 +79,9 @@
     "btn.form.ContactUs": "Send Message",
     "p.form.status.sending.ContactUs": "Sending message...",
     "p.form.status.sucess.ContactUs": "Message sent successfully! We will contact you soon.",
-    "p.form.status.error.ContactUs": "There was a connection error while sending the message."
+    "p.form.status.error.ContactUs": "There was a connection error while sending the message.",
+    "title.legal.terms": "Terms of Service",
+    "title.legal.privacy": "Privacy Policy",
+    "title.legal.cookies": "Cookie Policy"
 
 }

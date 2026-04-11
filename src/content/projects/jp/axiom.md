@@ -10,11 +10,11 @@ technologies:
   - name: "React"
     icon: "/projects/icons/react.svg"
   - name: "Mux"
-    icon: "/projects/icons/ts.svg"
+    icon: "/projects/icons/mux.svg"
   - name: "SheetJS"
     icon: "/projects/icons/sheetjs.svg"
   - name: "GCP"
-    icon: "/projects/icons/ts.svg"
+    icon: "/projects/icons/gcp.svg"
 mainImage: "/projects/axiom/axiom-img-dashboard.webp"
 gallery: 
   - url: "/projects/axiom/axiom-img-dashboard.webp"

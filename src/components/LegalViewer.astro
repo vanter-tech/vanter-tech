@@ -1,0 +1,36 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+import { useTranslation } from '../i18n/ui';
+
+interface Props {
+  lang: 'en' | 'es' | 'fr' | 'jp';
+  slug: 'terms' | 'privacy' | 'cookies';
+  pdfUrl: string;
+}
+
+const { lang, slug, pdfUrl } = Astro.props;
+const t = useTranslation(lang);
+
+const title = t(`title.legal.${slug}`); 
+---
+
+<Layout lang={lang}>
+  <main class="w-full pt-32 pb-24 px-6 bg-[#0a0a0a] min-h-screen">
+    
+    <div class="max-w-4xl mx-auto mb-12 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 font-vanter-code">
+        {title}
+      </h1>
+    </div>
+
+    <div class="w-full max-w-4xl mx-auto h-150 border border-gray-700 rounded-xl overflow-hidden shadow-lg">
+      <iframe 
+        src={pdfUrl} 
+        class="w-full h-full border-none bg-white"
+        title={title}
+      />
+    </div>
+    
+  </main>
+</Layout>
