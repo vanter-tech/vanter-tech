@@ -94,13 +94,25 @@ const getLangUrl = (targetLang: string) => {
           </li>
         </ul>
 
-        <div class="flex flex-col gap-4 mt-4">
+        <div class="flex flex-col gap-4 mt-2">
           <button class="menu-item opacity-0 translate-y-4  duration-300 bg-vanter-bg text-vanter-primary-text font-bold py-3 px-4 rounded border-2 border-vanter-border w-full hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
             {t('btn.pricing')}
           </button>
-          <button class="menu-item opacity-0 translate-y-4  duration-300 bg-vanter-bg text-vanter-primary-text font-bold py-3 px-4 rounded border-2 border-vanter-border w-full hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">
-            {t('btn.more')}
-          </button>
+          <div class="mt-4 w-full flex flex-col items-center gap-4 menu-item opacity-0 translate-y-4 transition-all duration-300">
+            <span class="text-xs text-gray-500 font-vanter-code uppercase tracking-widest">{t('span.language.burgerMenu')}</span>  
+            <div class="flex flex-wrap justify-center gap-3">
+              {languages.map((l) => (
+              <a
+                href={getLangUrl(l.code)}
+                class={`w-12 h-12 flex items-center justify-center rounded-xl border text-sm font-vanter-code transition-colors
+                ${l.code === lang 
+                ? 'border-blue-500 text-blue-500 bg-blue-500/10 font-bold' 
+                : 'border-white/10 text-gray-400 bg-white/5 hover:bg-white/10'
+                }`}>
+                {l.label}
+              </a>))}
+            </div>
+          </div>
         </div>
 
       </div>
