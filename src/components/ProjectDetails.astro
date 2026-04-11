@@ -10,6 +10,10 @@ const { project, lang } = Astro.props;
 const t = useTranslation(lang);
 
 const backUrl = lang === 'en' ? '/services' : `/${lang}/services`;
+
+const getRoute = (route: string) => {
+  return `/${lang}/${route}`;
+}
 ---
 
 <main class="w-full pt-32 px-6 bg-vanter-bg text-white">
@@ -93,7 +97,7 @@ const backUrl = lang === 'en' ? '/services' : `/${lang}/services`;
     
     <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
       
-      <a href="/" class="w-full sm:w-auto bg-white text-black font-bold py-3 px-8 rounded-xl hover:bg-gray-200 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+      <a href={getRoute('contact')} class="w-full sm:w-auto bg-white text-black font-bold py-3 px-8 rounded-xl hover:bg-gray-200 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.2)]">
         {t('a.section.ProjectDetail.viewWork')}
       </a>
       
