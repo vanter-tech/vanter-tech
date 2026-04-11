@@ -9,8 +9,6 @@ interface Props {
 const { project, lang } = Astro.props;
 const t = useTranslation(lang);
 
-const backUrl = lang === 'en' ? '/services' : `/${lang}/services`;
-
 const getRoute = (route: string) => {
   return `/${lang}/${route}`;
 }
@@ -19,7 +17,7 @@ const getRoute = (route: string) => {
 <main class="w-full pt-32 px-6 bg-vanter-bg text-white">
   <div class="max-w-4xl mx-auto">
     
-    <a href={backUrl} class="text-gray-400 hover:text-white mb-8 inline-block transition-colors font-vanter-code">
+    <a href={`/${lang}/services`} class="text-gray-400 hover:text-white mb-8 inline-block transition-colors font-vanter-code">
       {t('a.subtittle.ProjectDetail')}
     </a>
 
@@ -69,9 +67,22 @@ const getRoute = (route: string) => {
     <div class="mb-16">
       <h3 class="text-2xl font-bold mb-6 font-vanter-code">{t('h3.Tittle.ProjectDetail')}</h3>
       <div class="flex flex-wrap gap-3">
-        {project.data.technologies.map((tech: string) => (
-          <span class="px-4 py-2 bg-[#0a0a0a] border border-white/10 rounded-lg text-sm text-gray-300 font-vanter-code">
-            {tech}
+        
+        {project.data.technologies.map((tech: { name: string; icon?: string }) => (
+          
+          <span class="px-4 py-2 bg-[#0a0a0a] border border-white/10 rounded-lg text-sm text-gray-300 font-vanter-code flex items-center gap-2">
+            
+            {tech.icon && (
+              <img 
+                src={tech.icon} 
+                alt={tech.name} 
+                class="w-4 h-4 object-contain" 
+                loading="lazy" 
+              />
+            )}
+            
+            <span>{tech.name}</span>
+            
           </span>
         ))}
       </div>

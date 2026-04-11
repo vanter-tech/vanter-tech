@@ -10,7 +10,12 @@ const projects = defineCollection({
         title: z.string(),
         description: z.string(),
         category: z.string(),
-        technologies: z.array(z.string()),
+        technologies: z.array(
+            z.object({
+                name: z.string(),
+                icon: z.string().optional(),
+            })
+        ),
 
         mainImage: z.string(),
 
