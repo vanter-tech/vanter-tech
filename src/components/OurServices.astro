@@ -22,19 +22,46 @@ const getProjectUrl = (id: string) => {
 }
 
 ---
-
 <section class="py-24 px-6 bg-vanter-bg">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-4xl font-bold text-white mb-12 font-vanter-code">{t('h2.Tittle.Services')}</h2>
+  <div class="max-w-7xl mx-auto px-4">
     
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 p-4">
+      
+      <h2 class="text-4xl font-bold text-white font-vanter-code">
+        {t('h2.Tittle.Services')}
+      </h2>
+      
+      <div class="hidden md:flex bg-white/5 p-1 rounded-xl border border-white/10 w-max gap-1">
+        
+        <button id="btn-grid" class="p-2 rounded-lg bg-white/10 text-white transition-all" title="Vista Grid">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+        </button>
+        <button id="btn-list" class="p-2 rounded-lg hover:bg-white/10 text-gray-500 hover:text-white transition-all" title="Vista Lista">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+
+      </div>
+    </div>
+
+    <div 
+      id="projects-container" 
+      data-view="grid" 
+      class="group/layout grid grid-cols-1 data-[view=grid]:md:grid-cols-2 gap-8"
+    >
       {project.map((project) => (
-        <div class="group bg-[#0a0a0a] border border-white/10 rounded-3xl overflow-hidden hover:border-blue-500/50 transition-all duration-500">
-          <img src={project.data.mainImage} alt={project.data.title} class="w-full h-64 object-cover" />
+        <div class="group bg-[#0a0a0a] border border-white/10 rounded-3xl overflow-hidden hover:border-blue-500/50 transition-colors duration-500 flex flex-col group-data-[view=list]/layout:md:flex-row">
           
-          <div class="p-8">
+          <div class="w-full group-data-[view=list]/layout:md:w-1/2 group-data-[view=list]/layout:lg:w-3/5 overflow-hidden">
+            <img 
+              src={project.data.mainImage} 
+              alt={project.data.title} 
+              class="w-full object-cover transition-transform duration-700 h-64 group-data-[view=list]/layout:md:h-full group-data-[view=list]/layout:md:min-h-75" 
+            />
+          </div>
+          
+          <div class="w-full p-8 group-data-[view=list]/layout:md:p-12 group-data-[view=list]/layout:md:w-1/2 group-data-[view=list]/layout:lg:w-2/5 flex flex-col justify-center">
             <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">{project.data.category}</span>
-            <h3 class="text-2xl font-bold text-white mt-2 mb-4">{project.data.title}</h3>
+            <h3 class="text-2xl group-data-[view=list]/layout:md:text-3xl font-bold text-white mt-2 mb-4">{project.data.title}</h3>
             
             <div class="flex flex-wrap gap-2 mb-6">
               {project.data.technologies.map((tech) => (
@@ -44,10 +71,11 @@ const getProjectUrl = (id: string) => {
               ))}
             </div>
 
-            <a href={getProjectUrl(project.id)} class="text-white font-bold flex items-center gap-2 hover:gap-4 transition-all">
-              {t('a.subtittle.Services')} <span>→</span>
+            <a href={getProjectUrl(project.id)} class="text-white font-bold flex items-center gap-2 hover:gap-4 transition-all group-data-[view=list]/layout:mt-auto group-data-[view=list]/layout:md:mt-0">
+              {t('a.subtittle.Services')} <span class="text-blue-500">→</span>
             </a>
           </div>
+
         </div>
       ))}
     </div>
