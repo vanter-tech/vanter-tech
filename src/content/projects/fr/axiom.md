@@ -15,7 +15,31 @@ technologies:
     icon: "/projects/icons/sheetjs.svg"
   - name: "GCP"
     icon: "/projects/icons/gcp.svg"
-mainImage: "/projects/axiom/axiom-img-dashboard.webp" 
+mainImage: "/projects/axiom/axiom-img-dashboard.webp"
+features:
+  - title: "Portal Estudiantil 360°"
+    description: "Un espacio intuitivo donde los alumnos consultan sus asignaturas, siguen su progreso y acceden a sus clases diarias desde cualquier dispositivo."
+    icon: "/projects/icons/student-dashboard.svg"
+
+  - title: "Hub de Gestión Docente"
+    description: "Empodera a los profesores con herramientas ágiles para administrar sus asignaturas. Reduce horas de trabajo administrativo a solo un par de clics."
+    icon: "/projects/icons/teacher-briefcase.svg" 
+
+  - title: "Aulas y Horarios Sincronizados"
+    description: "Visualización interactiva de horarios escolares. Los estudiantes saben exactamente qué asignatura toca, con quién y en qué aula o enlace virtual conectarse."
+    icon: "/projects/icons/calendar-sync.svg" 
+
+  - title: "Motor de Calificaciones Automatizado"
+    description: "Centraliza el registro de notas. El sistema calcula promedios al instante y elimina por completo los errores humanos al generar los reportes académicos."
+    icon: "/projects/icons/grade-chart.svg" 
+
+  - title: "Gestor de Entregas en la Nube"
+    description: "Digitaliza el flujo de tareas. Los profesores asignan trabajos y los alumnos suben sus archivos directamente a la plataforma, con registro exacto de fecha y hora."
+    icon: "/projects/icons/cloud-upload.svg"
+
+  - title: "Ecosistema Centralizado"
+    description: "Elimina la fragmentación de usar WhatsApp, correos y Excel. Axiom unifica toda la comunicación y la trazabilidad de la institución en un solo entorno seguro."
+    icon: "/projects/icons/network-nodes.svg" 
 gallery: 
   - url: "/projects/axiom/axiom-img-dashboard.webp"
     alt: "Tableau de bord"

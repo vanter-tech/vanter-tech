@@ -1,8 +1,9 @@
 ---
 import { useTranslation } from '../i18n/ui';
+import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-  project: any;
+  project: CollectionEntry<'projects'>;
   lang: 'en' | 'es' | 'fr' | 'jp';
 }
 
@@ -22,7 +23,7 @@ const getRoute = (route: string) => {
     </a>
 
     <div class="mb-12">
-      <span class="text-blue-400 text-sm font-bold uppercase tracking-widest">{project.data.category}</span>
+      <span class="text-blue-400 text-sm font-bold uppercase tracking-widest animate-pulse">{project.data.category}</span>
       <h1 class="text-5xl md:text-7xl font-bold mt-2 mb-6">{project.data.title}</h1>
       <p class="text-xl text-gray-400 leading-relaxed text-pretty">{project.data.description}</p>
     </div>
@@ -41,6 +42,7 @@ const getRoute = (route: string) => {
             </div>
           </div>
         ))}
+        
       </div>
 
       <button 
@@ -64,6 +66,44 @@ const getRoute = (route: string) => {
         ))}
       </div>
     </div>
+
+    {project.data.features && project.data.features.length > 0 && (
+      <div class="mb-20">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 font-vanter-code">
+            Key Modules & Benefits
+          </h2>
+          <p class="text-lg text-gray-400">
+            Engineered to automate your workflow, eliminate manual errors, and scale with your business.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+          {project.data.features.map((feature: any) => (
+            <article class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800 flex flex-col items-center text-center gap-6 shadow-lg  hover:border-white transition-colors duration-500">
+              
+              <div class="size-20 rounded-full border border-zinc-700 bg-zinc-900 flex items-center justify-center shadow-[0_0_20px_-5px_rgba(33,150,243,0.3)]">
+                <img 
+                  src={feature.icon || "/vanter-tech_logo.svg"} 
+                  alt={feature.title}
+                  class="size-10 object-contain"
+                  loading="lazy"
+                />
+              </div>
+
+              <h3 class="text-xl font-bold text-white font-vanter-code">
+                {feature.title}
+              </h3>
+              <p class="text-base text-gray-400 leading-relaxed">
+                {feature.description}
+              </p>
+            </article>
+          ))}
+        </div>
+      </div>
+    )}
+
+    
     <div class="mb-16">
       <h3 class="text-2xl font-bold mb-6 font-vanter-code">{t('h3.Tittle.ProjectDetail')}</h3>
       <div class="flex flex-wrap gap-3">
@@ -90,6 +130,7 @@ const getRoute = (route: string) => {
 
   </div>
 </main>
+
 <section class="relative py-24 px-6 overflow-hidden">
   
   <div class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">

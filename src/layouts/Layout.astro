@@ -4,6 +4,7 @@ import Footer from '../components/Footer.astro';
 import Navbar from '../components/Navbar.astro';	
 import { ClientRouter } from 'astro:transitions';
 import { useTranslation } from '../i18n/ui';
+import '@fontsource-variable/jetbrains-mono/index.css';
 
 interface Props {
     lang: 'en' | 'es' | 'fr' | 'jp';
@@ -25,10 +26,6 @@ const t = useTranslation(lang);
 		<link rel="icon" type="image/svg+xml" href="/vanter-tech_logo.ico" />
 		<link rel="icon" href="/vanter-tech_logo.ico" />
 		<meta name="generator" content={Astro.generator} />
-
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 		
 		<ClientRouter/>
 

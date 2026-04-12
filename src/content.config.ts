@@ -16,6 +16,13 @@ const projects = defineCollection({
                 icon: z.string().optional(),
             })
         ),
+        features: z.array(
+            z.object({
+                title: z.string(),
+                description: z.string(),
+                icon: z.string().optional()
+            })
+        ),
 
         mainImage: z.string(),
 

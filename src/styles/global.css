@@ -24,7 +24,7 @@
     --vanter-background: #000000;
     --vanter-primary-text-color: #f4f4f5;
     --vanter-secondary-text-color: #4ade80;
-    --vanter-font-code: "JetBrains Mono", monospace;
+    --vanter-font-code: "JetBrains Mono Variable", monospace;
     --vanter-border-color: #ffffff;
 
 }
@@ -34,7 +34,7 @@
     --vanter-background: #ffffff;
     --vanter-primary-text-color: #18181b;
     --vanter-secondary-text-color: #4ade80;
-    --vanter-font-code: "JetBrains Mono", monospace;
+    --vanter-font-code: "JetBrains Mono Variable", monospace;
     --vanter-border-color: #000000;
   }
 }
