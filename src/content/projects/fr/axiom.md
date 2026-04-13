@@ -17,28 +17,28 @@ technologies:
     icon: "/projects/icons/gcp.svg"
 mainImage: "/projects/axiom/axiom-img-dashboard.webp"
 features:
-  - title: "Portal Estudiantil 360°"
-    description: "Un espacio intuitivo donde los alumnos consultan sus asignaturas, siguen su progreso y acceden a sus clases diarias desde cualquier dispositivo."
+  - title: "Portail étudiant 360°"
+    description: "Un espace intuitif où les étudiants consultent leurs matières, suivent leur progression et accèdent à leurs cours quotidiens depuis n'importe quel appareil."
     icon: "/projects/axiom/graduation-cap.svg"
 
-  - title: "Hub de Gestión Docente"
-    description: "Empodera a los profesores con herramientas ágiles para administrar sus asignaturas. Reduce horas de trabajo administrativo a solo un par de clics."
+  - title: "Hub de gestion des enseignants"
+    description: "Donne aux enseignants des outils agiles pour gérer leurs matières et réduit les heures de travail administratif à quelques clics seulement."
     icon: "/projects/axiom/board.svg" 
 
-  - title: "Aulas y Horarios Sincronizados"
-    description: "Visualización interactiva de horarios escolares. Los estudiantes saben exactamente qué asignatura toca, con quién y en qué aula o enlace virtual conectarse."
+  - title: "Salles et horaires synchronisés"
+    description: "Visualisation interactive des emplois du temps scolaires. Les étudiants savent exactement quel cours est prévu, avec qui et dans quelle salle ou lien virtuel se connecter."
     icon: "/projects/axiom/rows.svg" 
 
-  - title: "Motor de Calificaciones Automatizado"
-    description: "Centraliza el registro de notas. El sistema calcula promedios al instante y elimina por completo los errores humanos al generar los reportes académicos."
+  - title: "Moteur de notation automatisé"
+    description: "Centralise l'enregistrement des notes. Le système calcule les moyennes instantanément et élimine totalement les erreurs humaines lors de la génération des rapports académiques."
     icon: "/projects/axiom/grades.svg" 
 
-  - title: "Gestor de Entregas en la Nube"
-    description: "Digitaliza el flujo de tareas. Los profesores asignan trabajos y los alumnos suben sus archivos directamente a la plataforma, con registro exacto de fecha y hora."
+  - title: "Gestionnaire de livraisons dans le cloud"
+    description: "Numérise le flux de devoirs. Les enseignants assignent des travaux et les élèves téléversent leurs fichiers directement sur la plateforme, avec un enregistrement précis de la date et de l'heure."
     icon: "/projects/axiom/cloud.svg" 
 
-  - title: "Ecosistema Centralizado"
-    description: "Elimina la fragmentación de usar WhatsApp, correos y Excel. Axiom unifica toda la comunicación y la trazabilidad de la institución en un solo entorno seguro."
+  - title: "Écosystème centralisé"
+    description: "Élimine la fragmentation liée à l'utilisation de WhatsApp, des e-mails et d'Excel. Axiom unifie toutes les communications et la traçabilité de l'institution dans un seul environnement sécurisé."
     icon: "/projects/axiom/shield.svg"
 gallery: 
   - url: "/projects/axiom/axiom-img-dashboard.webp"
