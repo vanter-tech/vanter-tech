@@ -82,6 +82,8 @@
     "p.form.status.error.ContactUs": "メッセージの送信中に接続エラーが発生しました。",
     "title.legal.terms": "利用規約",
     "title.legal.privacy": "プライバシーポリシー",
-    "title.legal.cookies": "クッキーポリシー"
+    "title.legal.cookies": "クッキーポリシー",
+    "h2.title.features.ProjectDetail": "主要モジュールと利点",
+    "p.description.features.ProjectDetail": "ワークフローを自動化し、手動のエラーを排除し、ビジネスとともに拡張するように設計されています。"
 
 }

@@ -82,6 +82,8 @@
     "p.form.status.error.ContactUs": "Hubo un error de conexión al enviar el mensaje.",
     "title.legal.terms": "Términos de Servicio",
     "title.legal.privacy": "Política de Privacidad",
-    "title.legal.cookies": "Política de Cookies"
+    "title.legal.cookies": "Política de Cookies",
+    "h2.title.features.ProjectDetail": "Módulos clave y beneficios",
+    "p.description.features.ProjectDetail": "Diseñado para automatizar tu flujo de trabajo, eliminar los errores manuales y escalar con tu negocio."
 
 }

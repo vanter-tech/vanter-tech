@@ -82,6 +82,8 @@
     "p.form.status.error.ContactUs": "There was a connection error while sending the message.",
     "title.legal.terms": "Terms of Service",
     "title.legal.privacy": "Privacy Policy",
-    "title.legal.cookies": "Cookie Policy"
+    "title.legal.cookies": "Cookie Policy",
+    "h2.title.features.ProjectDetail": "Key modules and benefits",
+    "p.description.features.ProjectDetail": "Designed to automate your workflow, eliminate manual errors, and scale with your business."
 
 }

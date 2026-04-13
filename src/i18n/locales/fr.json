@@ -82,6 +82,8 @@
     "p.form.status.error.ContactUs": "Une erreur de connexion s'est produite lors de l'envoi du message.",
     "title.legal.terms": "Conditions d'utilisation",
     "title.legal.privacy": "Politique de confidentialité",
-    "title.legal.cookies": "Politique de cookies"
+    "title.legal.cookies": "Politique de cookies",
+    "h2.title.features.ProjectDetail": "Modules clés et avantages",
+    "p.description.features.ProjectDetail": "Conçu pour automatiser votre flux de travail, éliminer les erreurs manuelles et évoluer avec votre entreprise."
 
 }
