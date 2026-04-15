@@ -139,46 +139,61 @@ function modalCarousel(){
   const modal = document.getElementById('imageModal');
   const modalImg = document.getElementById('modalImage');
   const closeBtn = document.getElementById('closeModal');
-  
-  // ¡LA MAGIA AQUÍ!: 
-  // Buscamos el contenedor del carrusel y agarramos TODAS sus imágenes
+  const thumbContainer = document.getElementById('thumb-container');
   const carousel = document.getElementById('proyecto-carrusel');
-  
-  // Solo ejecutamos el código si el carrusel existe en la página
-  if (carousel) {
-    const images = carousel.querySelectorAll('img');
 
-    // 2. Le damos a cada imagen generada por Markdown la capacidad de abrir el modal
-    images.forEach(img => {
+  if (carousel && modal) {
+    const projectImages = Array.from(carousel.querySelectorAll('img'));
+
+    // Función para actualizar la imagen principal y resaltar la miniatura
+    const updateMainImage = (src) => {
+      modalImg.style.opacity = '0';
+      setTimeout(() => {
+        modalImg.src = src;
+        modalImg.style.opacity = '1';
+      }, 200);
+
+      // Resaltar miniatura activa
+      const thumbs = thumbContainer.querySelectorAll('img');
+      thumbs.forEach(t => {
+        if (t.src === src) t.classList.add('thumb-active');
+        else t.classList.remove('thumb-active');
+      });
+    };
+
+    // Al abrir el modal por primera vez
+    projectImages.forEach((img, index) => {
+      img.classList.add('cursor-pointer', 'hover:opacity-80', 'transition-all');
       
-      // Opcional: Le agregamos por JS la clase del cursor para que el usuario sepa que es clickeable
-      img.classList.add('cursor-pointer', 'hover:opacity-90', 'transition-opacity');
-
       img.addEventListener('click', () => {
-        modalImg.src = img.src; // Copiamos la ruta de la imagen
-        modal.showModal();      // Abrimos el modal nativo
-        document.body.style.overflow = 'hidden'; // Bloqueamos el scroll del fondo
+        // Limpiar miniaturas previas
+        thumbContainer.innerHTML = '';
+
+        // Crear las miniaturas en el modal
+        projectImages.forEach((pImg) => {
+          const thumb = document.createElement('img');
+          thumb.src = pImg.src;
+          // Aplicamos el borde blanco con pulso y tus variables
+          thumb.className = "h-16 md:h-20 aspect-video object-cover rounded-lg cursor-pointer opacity-60 hover:opacity-100 transition-all thumb-pulse";
+          
+          thumb.addEventListener('click', () => updateMainImage(thumb.src));
+          thumbContainer.appendChild(thumb);
+        });
+
+        updateMainImage(img.src);
+        modal.showModal();
+        document.body.style.overflow = 'hidden';
       });
     });
   }
 
-  // 3. Función para cerrar el modal
   const closeModal = () => {
     modal.close();
-    document.body.style.overflow = ''; // Restauramos el scroll
+    document.body.style.overflow = '';
   };
 
-  // Cerramos al hacer clic en la X
-  if(closeBtn) closeBtn.addEventListener('click', closeModal);
-
-  // Cerrar si hacen clic fuera de la imagen (en el fondo negro)
-  if(modal) {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        closeModal();
-      }
-    });
-  }
+  closeBtn?.addEventListener('click', closeModal);
+  modal?.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
 }
 
 document.addEventListener('astro:page-load', () => {
