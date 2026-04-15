@@ -1,0 +1,95 @@
+---
+import { useTranslation } from '../i18n/ui';
+
+interface Props {
+  lang: 'en' | 'es' | 'fr' | 'jp';
+}
+
+const { lang } = Astro.props;
+const t = useTranslation(lang);
+
+---
+
+<main class="w-full min-h-screen bg-black text-white font-vanter-code">
+  
+  <div class="max-w-screen-xl mx-auto border-x border-zinc-900 min-h-screen flex flex-col">
+
+    <div class="w-full border-b border-zinc-900 h-24 md:h-32"></div>
+
+    <header class="w-full border-b border-zinc-900 py-20 md:py-28 px-6 flex justify-center items-center">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white text-center">
+        Terms of Service
+      </h1>
+    </header>
+
+    <div class="w-full border-b border-zinc-900 py-6 text-center">
+      <p class="text-sm md:text-base text-zinc-500">Last Updated April 14, 2026</p>
+    </div>
+
+    <div class="flex-1 w-full flex justify-center">
+      
+      <article class="p-8 md:p-12 lg:p-16 w-full max-w-4xl flex justify-center">
+        
+        <div class="prose prose-invert w-full max-w-3xl
+                    prose-headings:text-white prose-headings:font-bold prose-headings:tracking-wide
+                    prose-h2:text-2xl md:prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 first:prose-h2:mt-0
+                    prose-p:text-zinc-400 prose-p:leading-relaxed prose-p:text-base
+                    prose-li:text-zinc-400 prose-ul:list-disc
+                    prose-strong:text-zinc-200
+                    prose-a:text-white hover:prose-a:text-zinc-300 transition-colors">
+          
+          <h2>1. Scope</h2>
+          <p>This Terms of Service applies to all customers and their users' use of all services offered by <strong>Vanter.</strong> Capitalized terms used below but not defined in this Policy have the meaning set forth in the agreement between you ("Customer" or "you") and Vanter governing the provision of Vanter's services ("Agreement"). By using our website, requesting a quote, or engaging our software services, you agree to adhere to these Terms.</p>
+
+          <h2>2. Services Provided</h2>
+          <p>Vanter provides access to proprietary software solutions operating under a Software as a Service (SaaS) model. We host, maintain, and update the software, allowing customers to access and utilize the platform via the internet. The specific features, capacity, and pricing will be dictated by the subscription plan or service agreement selected by the customer.</p>
+
+          <h2>3. Intellectual Property and License</h2>
+          <p><strong>3.1 Ownership:</strong> Vanter retains all rights, title, and interest in and to the Services, including all underlying software, source code, architectures, algorithms, databases, user interfaces, and any future updates or modifications. Your purchase of a subscription does not transfer ownership of any software to you.</p>
+          
+          <p><strong>3.2 License to Use:</strong> Subject to your compliance with these Terms and payment of applicable fees, Vanter grants you a limited, non-exclusive, non-transferable, and revocable license to access and use our software strictly for your business operations during the term of your subscription.</p>
+
+          <p><strong>3.3 Restrictions:</strong> Customers are strictly prohibited from:</p>
+          <ul>
+            <li>Copying, modifying, duplicating, or creating derivative works from our software.</li>
+            <li>Selling, renting, leasing, or sublicensing access to our platform to unauthorized third parties.</li>
+            <li>Reverse engineering, decompiling, or attempting to extract the source code of our systems.</li>
+          </ul>
+
+          <h2>4. Payment Terms</h2>
+          <p>Services are billed according to the terms specified in the proposal or subscription tier. Unless otherwise agreed:</p>
+          <ul>
+            <li>A deposit or upfront payment of <strong>40%</strong> is required before initial deployment.</li>
+            <li>Subscription renewals are billed automatically on a <strong>Anual</strong> basis.</li>
+            <li>Invoices are payable within <strong>15</strong> days of receipt. Late payments may result in temporary suspension of services and incur an interest charge of <strong>1.5%</strong> per month.</li>
+          </ul>
+
+          <h2>5. Service Guarantees and Warranties</h2>
+          <p>We strive to deliver high-performance, bug-free applications. We provide a <strong>30-day SLA</strong> (Service Level Agreement) warranty period following the final deployment. During this time, we will fix any critical errors or bugs directly related to the code we wrote at no extra cost.</p>
+          <ul>
+            <li>This warranty does not cover issues arising from modifications made by you or third parties, changes in external APIs, or server downtime caused by external hosting providers.</li>
+            <li>EXCEPT AS EXPRESSLY PROVIDED HEREIN, VANTER PROVIDES ITS SERVICES "AS IS" AND DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED.</li>
+          </ul>
+
+          <h2>6. Confidentiality</h2>
+          <p>Both parties agree to hold in strict confidence any proprietary or confidential information disclosed during the course of the project. This includes business strategies, source code, client data, and trade secrets. This obligation survives the termination of the project.</p>
+
+          <h2>7. Limitation of Liability</h2>
+          <p>To the maximum extent permitted by law, Vanter shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from your use of our services. In no event shall our aggregate liability exceed the total fees paid by you to Vanter for the specific project giving rise to the claim.</p>
+
+          <h2>8. Violations and Termination</h2>
+          <p>A customer's violation of these Terms will be considered a material breach. If we reasonably believe a customer is violating these Terms, we may restrict, suspend, or terminate your access to our Services immediately upon notice to you. Either party may terminate a project with written notice if the other party breaches a material term and fails to cure it within <strong>[Número, ej: 15]</strong> days.</p>
+
+          <h2>9. Governing Law</h2>
+          <p>These Terms shall be governed by and construed in accordance with the laws of <strong>Nicaragua</strong>, without regard to its conflict of law provisions.</p>
+
+          <h2>10. Changes to Terms</h2>
+          <p>Vanter reserves the right to modify these Terms at any time. We will notify users of any material changes by updating the "Last Updated" date at the top of this page. Your continued use of our services after such changes constitutes acceptance of the new Terms.</p>
+
+        </div>
+
+      </article>
+
+    </div>
+  </div>
+</main>
