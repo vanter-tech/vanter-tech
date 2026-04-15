@@ -135,8 +135,55 @@ function inicializarVistaProyectos() {
   }
 }
 
+function modalCarousel(){
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const closeBtn = document.getElementById('closeModal');
+  
+  // ¡LA MAGIA AQUÍ!: 
+  // Buscamos el contenedor del carrusel y agarramos TODAS sus imágenes
+  const carousel = document.getElementById('proyecto-carrusel');
+  
+  // Solo ejecutamos el código si el carrusel existe en la página
+  if (carousel) {
+    const images = carousel.querySelectorAll('img');
+
+    // 2. Le damos a cada imagen generada por Markdown la capacidad de abrir el modal
+    images.forEach(img => {
+      
+      // Opcional: Le agregamos por JS la clase del cursor para que el usuario sepa que es clickeable
+      img.classList.add('cursor-pointer', 'hover:opacity-90', 'transition-opacity');
+
+      img.addEventListener('click', () => {
+        modalImg.src = img.src; // Copiamos la ruta de la imagen
+        modal.showModal();      // Abrimos el modal nativo
+        document.body.style.overflow = 'hidden'; // Bloqueamos el scroll del fondo
+      });
+    });
+  }
+
+  // 3. Función para cerrar el modal
+  const closeModal = () => {
+    modal.close();
+    document.body.style.overflow = ''; // Restauramos el scroll
+  };
+
+  // Cerramos al hacer clic en la X
+  if(closeBtn) closeBtn.addEventListener('click', closeModal);
+
+  // Cerrar si hacen clic fuera de la imagen (en el fondo negro)
+  if(modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+  }
+}
+
 document.addEventListener('astro:page-load', () => {
   setupMenu();
   setupInteraction();
   inicializarVistaProyectos();
+  modalCarousel();
 });
