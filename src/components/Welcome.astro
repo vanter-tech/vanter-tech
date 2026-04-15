@@ -19,15 +19,17 @@ const getRoute = (route: string) => {
 
 <main class="w-full pt-32 overflow-x-hidden">
   
+  <section class="w-full min-h-[calc(100vh-120px)] flex flex-col justify-center items-center pb-12">
+  
   <div class="flex flex-col items-center w-full px-4 relative"> 
       <div class="relative max-w-5xl w-full text-center"> 
           
-          <h1 class="invisible text-4xl sm:text-5xl md:text-7xl lg:text-[6rem] leading-tight font-bold pointer-events-none text-center">
+          <h1 class="invisible text-[40px] sm:text-5xl md:text-7xl lg:text-[6rem] leading-tight font-bold pointer-events-none text-center">
               {t('hero.mainTitle')}
           </h1>
 
           <div class="absolute inset-0 w-full h-full flex justify-center px-2">
-              <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-[6rem] leading-tight text-vanter-primary-text font-bold text-center wrap-break-word">
+              <h1 class="text-[40px] sm:text-5xl md:text-7xl lg:text-[6rem] leading-tight text-vanter-primary-text font-bold text-center wrap-break-word">
                   <Typerwriter text={t('hero.mainTitle')} typingSpeed={80} />
               </h1>
           </div>
@@ -35,7 +37,7 @@ const getRoute = (route: string) => {
     </div>
   </div>
 
-  <div class="text-center gap-4 mt-20 flex flex-col sm:flex-row justify-center px-6 max-w-sm sm:max-w-none mx-auto">
+  <div class="text-center gap-4 mt-16 flex flex-col sm:flex-row justify-center px-6 w-full max-w-sm sm:max-w-none mx-auto">
     <a href={getRoute('services')} class=" flex items-center justify-center w-full sm:w-auto bg-vanter-bg text-vanter-primary-text font-bold h-14 py-2 px-8 rounded border-2 border-vanter cursor-pointer hover:bg-vanter-primary-text hover:text-vanter-bg transition-colors">  
       {t('btn.diveIntoIt')}
     </a>
@@ -43,6 +45,8 @@ const getRoute = (route: string) => {
       {t('btn.getStarted')}
     </a>
   </div>
+
+</section>
 
   <section class="bg-[#050505] text-white py-24 px-6">
     <div class="max-w-6xl mx-auto">
