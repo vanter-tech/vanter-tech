@@ -9,11 +9,14 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "pnpm run build && wrangler dev",
     "lint": "eslint .",
-    "astro": "astro"
+    "astro": "astro",
+    "generate-types": "wrangler types",
+    "deploy": "pnpm run build && wrangler deploy"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^13.1.10",
     "@fontsource-variable/jetbrains-mono": "^5.2.8",
     "@tailwindcss/vite": "^4.2.2",
     "astro": "^6.1.1",
@@ -25,7 +28,8 @@
     "@typescript-eslint/parser": "^8.57.2",
     "eslint": "^10.1.0",
     "eslint-plugin-astro": "^1.6.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "wrangler": "^4.83.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
@@ -35,5 +39,8 @@
     "ignoredBuiltDependencies": [
       "sharp"
     ]
+  },
+  "overrides": {
+    "vite": "^7"
   }
 }
