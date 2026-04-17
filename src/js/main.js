@@ -120,7 +120,7 @@ function inicializarVistaProyectos() {
       if (document.startViewTransition) {
         document.startViewTransition(() => cambiarVista('list'));
       } else {
-        // Fallback para navegadores antiguos
+
         cambiarVista('list');
       }
     });
