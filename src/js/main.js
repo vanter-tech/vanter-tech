@@ -159,8 +159,8 @@ function modalCarousel(){
 
       const thumbs = thumbContainer.querySelectorAll('img');
       thumbs.forEach(t => {
-        if (t.src === src) t.classList.add('thumb-active');
-        else t.classList.remove('thumb-active');
+        if (t.src === src) t.classList.add('border-2', 'border-white', 'thumb-active', 'animate-pulse');
+        else t.classList.remove('thumb-active', 'border-2', 'border-white', 'animate-pulse');
       });
     };
 
