@@ -67,8 +67,55 @@ const getRoute = (route: string) => {
       </div>
     </div>
 
+  <section class="relative mt-20 overflow-hidden">
+  
+    <div class="relative z-10 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 bg-[#0a0a0a]/50 backdrop-blur-xl border border-white/10 p-6 rounded-2xl shadow-2xl">
+    
+      <div class="bg-zinc-900/40 p-6 rounded-xl border border-white/5 hover:border-white/10 transition-colors flex flex-col">
+        <div class="border-b border-white/10 w-full pb-3 mb-4">
+          <h2 class="text-white font-semibold flex items-center gap-2">
+            <svg class="w-5 h-5 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            El Desafío
+          </h2>
+        </div>
+        <p class="text-zinc-400 leading-relaxed text-sm">
+          Las instituciones educativas a menudo sufren por la fragmentación de la información. El uso de múltiples hojas de cálculo, el registro manual de calificaciones propenso a errores y una comunicación ineficiente entre docentes y alumnos generan horas de trabajo administrativo redundante cada semana.
+        </p>
+      </div>
+
+      <div class="bg-zinc-900/40 p-6 rounded-xl border border-white/5 hover:border-white/10 transition-colors flex flex-col">
+        <div class="border-b border-white/10 w-full pb-3 mb-4">
+          <h2 class="text-white font-semibold flex items-center gap-2">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Nuestra Solución
+          </h2>
+        </div>
+        <p class="text-zinc-400 leading-relaxed text-sm">
+          Construimos <strong>Axiom</strong> para centralizar toda la burocracia escolar en un único ecosistema digital. El sistema automatiza el cálculo de promedios, sincroniza horarios en tiempo real y gestiona entregas en la nube, devolviendo a los profesores su tiempo para que se enfoquen en lo que importa: enseñar.
+        </p>
+      </div>
+
+      <div class="bg-zinc-900/60 p-6 rounded-xl border border-white/10 md:col-span-2 mt-2 flex flex-col md:flex-row items-center gap-6">
+      
+        <div class="flex-shrink-0 text-center md:text-left md:border-r md:border-white/10 md:pr-6">
+          <span class="block text-4xl font-bold text-white tracking-tighter">100%</span>
+          <span class="text-xs text-zinc-500 uppercase tracking-wider font-semibold">Flujo Digitalizado</span>
+        </div>
+
+        <div>
+          <h2 class="text-white font-semibold mb-2">Arquitectura y Rendimiento</h2>
+          <p class="text-zinc-400 text-sm leading-relaxed">
+            Para garantizar que la plataforma pudiera soportar altos picos de tráfico concurrente —como ocurre durante los periodos de cierre evaluativo— sin sufrir latencia, diseñamos una arquitectura robusta. La elección de nuestras herramientas de desarrollo priorizó la velocidad, la seguridad de los datos estudiantiles y la escalabilidad del ecosistema.
+          </p>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+
     {project.data.features && project.data.features.length > 0 && (
-      <div class="mb-20">
+      
+      <div class="mb-20 mt-20">
         <div class="text-center max-w-3xl mx-auto mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 font-vanter-code">
             {t('h2.title.features.ProjectDetail')}
@@ -77,6 +124,7 @@ const getRoute = (route: string) => {
             {t('p.description.features.ProjectDetail')}
           </p>
         </div>
+
 
         <div class="flex flex-col md:grid md:grid-cols-3 gap-4 md:gap-8 w-full">
           {project.data.features.map((feature: any) => (
@@ -160,6 +208,7 @@ const getRoute = (route: string) => {
   </div>
 </main>
 
+
 <section class="relative py-24 px-6 overflow-hidden">
   
   <div class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
@@ -185,9 +234,8 @@ const getRoute = (route: string) => {
       
     </div>
   </div> 
-
-
-  <dialog id="imageModal" 
+</section>
+<dialog id="imageModal" 
     class="fixed inset-0 m-0 p-0 border-none outline-none w-screen h-dvh max-w-none max-h-none bg-black backdrop:bg-black/95 backdrop:backdrop-blur-sm z-100 overflow-hidden">
   
     <div class="flex flex-col w-full h-full relative">
@@ -210,6 +258,7 @@ const getRoute = (route: string) => {
       
       </div>
 
+
       <div class="absolute bottom-0 left-0 w-full z-50 md:relative bg-linear-to-t from-black/90 via-black/60 to-transparent md:bg-zinc-950/90 border-none md:border-t md:border-zinc-800/50 pb-6 pt-16 md:py-4 shrink-0 flex items-center justify-center px-0 pointer-events-none md:pointer-events-auto">
       
         <div class="flex-1 overflow-hidden relative pointer-events-auto md:max-w-screen-2xl mx-auto flex items-center">
@@ -230,7 +279,5 @@ const getRoute = (route: string) => {
 
     </div>
   </dialog>
-
-</section>
 
 <script src="/src/js/main.ts"></script>

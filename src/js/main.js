@@ -193,28 +193,19 @@ function modalCarousel(){
         setTimeout(toggleArrows, 50);
       });
 
-      // ==========================================
-    // 6. NAVEGACIÓN CON TECLADO (Flechas)
-    // ==========================================
     window.addEventListener('keydown', (e) => {
-      // 1. Si el modal NO está abierto, ignoramos el teclado
       if (!modal.open) return;
 
-      // 2. Buscamos el índice (posición 0, 1, 2...) de la imagen que estamos viendo
       const currentIndex = projectImages.findIndex(img => img.src === modalImg.src);
-    
-      // Por si ocurre un error raro y no la encuentra
+
       if (currentIndex === -1) return;
 
-      // 3. Lógica de las teclas
       if (e.key === 'ArrowLeft') {
-        // Si presionan Izquierda y NO estamos en la primera imagen (0)
         if (currentIndex > 0) {
           updateMainImage(projectImages[currentIndex - 1].src);
         }
       } 
       else if (e.key === 'ArrowRight') {
-        // Si presionan Derecha y NO estamos en la última imagen
         if (currentIndex < projectImages.length - 1) {
           updateMainImage(projectImages[currentIndex + 1].src);
         }
@@ -249,7 +240,7 @@ function modalCarousel(){
     if (!thumbContainer || !prevBtn || !nextBtn) return;
     
 
-    const isScrollable = thumbContainer.scrollWidth > thumbContainer.clientWidth;
+    const isScrollable = thumbContainer.scrollWidth >= thumbContainer.clientWidth;
     
     if (isScrollable) {
 
