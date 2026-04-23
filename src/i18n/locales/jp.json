@@ -84,6 +84,13 @@
     "title.legal.privacy": "プライバシーポリシー",
     "title.legal.cookies": "クッキーポリシー",
     "h2.title.features.ProjectDetail": "主要モジュールと利点",
-    "p.description.features.ProjectDetail": "ワークフローを自動化し、手動のエラーを排除し、ビジネスとともに拡張するように設計されています。"
+    "p.description.features.ProjectDetail": "ワークフローを自動化し、手動のエラーを排除し、ビジネスとともに拡張するように設計されています。",
+    "h2.tittle.why.ProjectDetail": "課題",
+    "p.description.why.ProjectDetail": "教育機関はしばしば情報の断片化に苦しんでいます。複数のスプレッドシートの使用、エラーが発生しやすい手動の成績記録、教師と学生の間の非効率なコミュニケーションは、毎週何時間もの冗長な管理作業を生み出します。",
+    "h2.tittle.why.ProjectDetail.2": "私たちの解決策",  
+    "p.description.why.ProjectDetail.2": "私たちは、すべての学校の官僚主義を単一のデジタルエコシステムに集中させるためにAxiomを構築しました。システムは平均計算を自動化し、リアルタイムでスケジュールを同期し、クラウドで配信を管理し、教師が重要なことに集中できるように時間を取り戻します：教えること。",
+    "h2.subtittle.why.ProjectDetail.3": "デジタル化されたワークフロー",
+    "h2.tittle.why.ProjectDetail.3": "アーキテクチャとパフォーマンス",
+    "p.description.why.ProjectDetail.3": "プラットフォームが高い同時トラフィックのピークを処理できるようにするために —評価の締め切り期間中など— レイテンシーが発生しないように、堅牢なアーキテクチャを設計しました。私たちの開発ツールの選択は、速度、学生データのセキュリティ、およびエコシステムのスケーラビリティを優先しました。"
 
 }

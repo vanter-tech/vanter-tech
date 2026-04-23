@@ -84,6 +84,13 @@
     "title.legal.privacy": "Politique de confidentialité",
     "title.legal.cookies": "Politique de cookies",
     "h2.title.features.ProjectDetail": "Modules clés et avantages",
-    "p.description.features.ProjectDetail": "Conçu pour automatiser votre flux de travail, éliminer les erreurs manuelles et évoluer avec votre entreprise."
+    "p.description.features.ProjectDetail": "Conçu pour automatiser votre flux de travail, éliminer les erreurs manuelles et évoluer avec votre entreprise.",
+    "h2.tittle.why.ProjectDetail": "Le défi",
+    "p.description.why.ProjectDetail": "Les institutions éducatives souffrent souvent de la fragmentation de l'information. L'utilisation de plusieurs feuilles de calcul, l'enregistrement manuel des notes sujet à des erreurs et une communication inefficace entre enseignants et étudiants génèrent des heures de travail administratif redondant chaque semaine.",
+    "h2.tittle.why.ProjectDetail.2": "Notre solution",
+    "p.description.why.ProjectDetail.2": "Nous avons construit Axiom pour centraliser toute la bureaucratie scolaire dans un seul écosystème numérique. Le système automatise le calcul des moyennes, synchronise les horaires en temps réel et gère les livraisons cloud, redonnant aux enseignants leur temps pour se concentrer sur ce qui compte : enseigner.",
+    "h2.subtittle.why.ProjectDetail.3": "Flux de travail numérisé",
+    "h2.tittle.why.ProjectDetail.3": "Architecture et performance",
+    "p.description.why.ProjectDetail.3": "Pour garantir que la plateforme puisse gérer des pics élevés de trafic concurrent —comme cela se produit pendant les périodes de clôture évaluative— sans subir de latence, nous avons conçu une architecture robuste. Le choix de nos outils de développement a privilégié la vitesse, la sécurité des données des étudiants et l'évolutivité de l'écosystème."
 
 }

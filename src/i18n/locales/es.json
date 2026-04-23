@@ -84,6 +84,13 @@
     "title.legal.privacy": "Política de Privacidad",
     "title.legal.cookies": "Política de Cookies",
     "h2.title.features.ProjectDetail": "Módulos clave y beneficios",
-    "p.description.features.ProjectDetail": "Diseñado para automatizar tu flujo de trabajo, eliminar los errores manuales y escalar con tu negocio."
+    "p.description.features.ProjectDetail": "Diseñado para automatizar tu flujo de trabajo, eliminar los errores manuales y escalar con tu negocio.",
+    "h2.tittle.why.ProjectDetail": "El Desafío",
+    "p.description.why.ProjectDetail": "Las instituciones educativas a menudo sufren por la fragmentación de la información. El uso de múltiples hojas de cálculo, el registro manual de calificaciones propenso a errores y una comunicación ineficiente entre docentes y alumnos generan horas de trabajo administrativo redundante cada semana.",
+    "h2.tittle.why.ProjectDetail.2": "Nuestra Solución",
+    "p.description.why.ProjectDetail.2": "Construimos Axiom para centralizar toda la burocracia escolar en un único ecosistema digital. El sistema automatiza el cálculo de promedios, sincroniza horarios en tiempo real y gestiona entregas en la nube, devolviendo a los profesores su tiempo para que se enfoquen en lo que importa: enseñar.",
+    "h2.subtittle.why.ProjectDetail.3": "Flujo Digitalizado",
+    "h2.tittle.why.ProjectDetail.3": "Arquitectura y Rendimiento",
+    "p.description.why.ProjectDetail.3": "Para garantizar que la plataforma pudiera soportar altos picos de tráfico concurrente —como ocurre durante los periodos de cierre evaluativo— sin sufrir latencia, diseñamos una arquitectura robusta. La elección de nuestras herramientas de desarrollo priorizó la velocidad, la seguridad de los datos estudiantiles y la escalabilidad del ecosistema."
 
 }

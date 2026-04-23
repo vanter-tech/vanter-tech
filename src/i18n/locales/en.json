@@ -84,6 +84,13 @@
     "title.legal.privacy": "Privacy Policy",
     "title.legal.cookies": "Cookie Policy",
     "h2.title.features.ProjectDetail": "Key modules and benefits",
-    "p.description.features.ProjectDetail": "Designed to automate your workflow, eliminate manual errors, and scale with your business."
+    "p.description.features.ProjectDetail": "Designed to automate your workflow, eliminate manual errors, and scale with your business.",
+    "h2.tittle.why.ProjectDetail": "The Challenge",
+    "p.description.why.ProjectDetail": "Educational institutions often suffer from information fragmentation. The use of multiple spreadsheets, error-prone manual grade recording, and inefficient communication between teachers and students generate hours of redundant administrative work each week.",
+    "h2.tittle.why.ProjectDetail.2": "Our Solution",
+    "p.description.why.ProjectDetail.2": "We built Axiom to centralize all school bureaucracy into a single digital ecosystem. The system automates average calculation, synchronizes schedules in real-time, and manages cloud deliveries, giving teachers back their time to focus on what matters: teaching.",
+    "h2.subtittle.why.ProjectDetail.3": "Digitized Workflow",
+    "h2.tittle.why.ProjectDetail.3": "Architecture and Performance",
+    "p.description.why.ProjectDetail.3": "To ensure the platform could handle high peaks of concurrent traffic —as occurs during evaluative closing periods— without suffering latency, we designed a robust architecture. The choice of our development tools prioritized speed, student data security, and ecosystem scalability."
 
 }
